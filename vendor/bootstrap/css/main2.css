@@ -3326,7 +3326,7 @@ input, select, textarea {
 
 		#header > .title {
 			border: 0;
-			color: #1F85A4;
+			color: #ffffff;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3358,7 +3358,7 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: rgba(31, 133, 164, 0.35);
+						color: rgba(255, 255, 255, 0.35);
 						display: inline-block;
 						font-size: 0.6em;
 						font-weight: bold;
