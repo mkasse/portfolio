@@ -3015,7 +3015,6 @@ input, select, textarea {
 			/*border-radius: 100%;*/
 			margin: 0 3em 3em 0;
 			display: block;
-			position: absolute;
 		}
 
 			.spotlight .image img {
