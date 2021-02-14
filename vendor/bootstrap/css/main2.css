@@ -3008,6 +3008,7 @@ input, select, textarea {
 			height:200px;
 			margin: 0 3em 3em 0;
 			display: block;
+			position: relative;
 		}
 		.spotlight .image {
 			width: 30%;
