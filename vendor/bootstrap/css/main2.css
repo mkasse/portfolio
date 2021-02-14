@@ -3014,7 +3014,7 @@ input, select, textarea {
 			width: 30%;
 			/*border-radius: 100%;*/
 			margin: 0 3em 3em 0;
-			display: inline-block;
+			display: block;
 		}
 
 		.spotlight .image2 {
@@ -3022,6 +3022,7 @@ input, select, textarea {
 			/*border-radius: 100%;*/
 			margin: 0 3em 3em 0;
 			display: block;
+			vertical-align: bottom;
 		}
 
 			.spotlight .image img {
