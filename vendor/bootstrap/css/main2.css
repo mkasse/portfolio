@@ -2444,7 +2444,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #ffffff;
 			content: '\f00c';
 		}
 
@@ -3319,7 +3319,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #1F85A4;
+		background-color: #ffffff;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
