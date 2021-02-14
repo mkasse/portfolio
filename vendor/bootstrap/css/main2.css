@@ -1915,7 +1915,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #ffffff !important;
+			color: #d99c41 !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2295,7 +2295,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #A41F53;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2313,7 +2313,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(255, 255, 255, 0.05);
+		background: rgba(164, 31, 83, 0.05);
 		border-radius: 0.25em;
 		border: none;
 		border: solid 1px rgba(255, 255, 255, 0.15);
