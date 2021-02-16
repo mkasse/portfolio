@@ -3003,22 +3003,35 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.spotlight .image {
-			/*width: 30%;*/
-			/*border-radius: 100%;*/
-			margin: 0 3em 3em 0;
-			/*display: block;*/
-			flex: 100%;
-  			padding: 4px;
+
+		.spotlight .row {
+		  display: flex;
+		  flex-wrap: wrap;
+		  padding: 0 4px;
 		}
 
-			.spotlight .image img {
-				display: block;
-				/*border-radius: 100%;*/
-				/*width: 100%;
-				margin-top: 8px;
-  				vertical-align: middle;*/
-			}
+		/* Create four equal columns that sits next to each other */
+		.spotlight .column {
+		  flex: 25%;
+		  max-width: 25%;
+		  padding: 0 4px;
+		}
+
+		.spotlight .column img {
+		  margin-top: 8px;
+		  vertical-align: middle;
+		  width: 100%;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 800px) {
+		  .column {
+		    flex: 50%;
+		    max-width: 50%;
+		  }
+		}
+
+
 
 		.spotlight .content {
 			width: 70%;
