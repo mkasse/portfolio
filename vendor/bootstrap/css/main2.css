@@ -3007,6 +3007,9 @@ input, select, textarea {
 			width: 30%;
 			margin: 0 3em 3em 0;
 			display: block;
+			flex: 100%;
+		        max-width: 100%;
+		        padding: 0 4px;
 		}
 
 			.spotlight .image img {
