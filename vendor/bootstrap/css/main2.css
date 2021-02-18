@@ -3003,15 +3003,22 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	}
+
+
 		.spotlight .image {		
 			width: 30%;
 			margin: 0 3em 3em 0;
 			display: block;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			grid-gap: 1em;
 		}
 
 			.spotlight .image img {
 				display: block;
 				width: 100%;
+				height: auto;
 			}
 
 		.spotlight .content {
