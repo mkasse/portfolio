@@ -3016,7 +3016,7 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			width: 70%;
+			max-width: 70%;
 		}
 
 			.spotlight .content > :last-child {
@@ -3034,7 +3034,7 @@ input, select, textarea {
 				margin: 0 0 0 3em;
 			}
 
-			.spotlight:nth-child(2n) .content2 {
+			.spotlight:nth-child(2n) .content {
 				text-align: right;
 			}
 
