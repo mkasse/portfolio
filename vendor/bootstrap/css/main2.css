@@ -3005,6 +3005,7 @@ input, select, textarea {
 
 		.spotlight .image {
 			display: grid;
+			grid-template-columns: 1fr;
 			width: 30%;
 			margin: 0 3em 3em 0;
 			display: block;
