@@ -3004,15 +3004,14 @@ input, select, textarea {
 	}
 
 		.spotlight .image {
-			max-width: 30%;
+			width: 30%;
 			margin: 0 3em 3em 0;
 			display: block;
 		}
 
 			.spotlight .image img {
 				display: block;
-				max-width: 30%;
-				/*width:100%;*/
+				width:100%;
 				height:30%;
 			}
 
