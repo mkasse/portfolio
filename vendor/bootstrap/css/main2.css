@@ -3013,7 +3013,7 @@ input, select, textarea {
 				display: block;
 				width:100%;
 				height:30%;
-				flex-direction:column;
+				flex-flow:column wrap;
 			}
 
 		.spotlight .content {
