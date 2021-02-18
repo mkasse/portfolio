@@ -3014,6 +3014,7 @@ input, select, textarea {
 				width:100%;
 				height:30%;
 				flex-flow:column wrap;
+				justify-content: flex-start;
 			}
 
 		.spotlight .content {
