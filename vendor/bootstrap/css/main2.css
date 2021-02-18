@@ -3007,14 +3007,14 @@ input, select, textarea {
 			display: block;
 			max-width: 30%;
 			margin: 0 3em 3em 0;
+			flex-flow:column wrap;
+			justify-content: flex-start;
 		}
 
 			.spotlight .image img {
 				display: block;
 				width:100%;
 				height:30%;
-				flex-flow:column wrap;
-				justify-content: flex-start;
 			}
 
 		.spotlight .content {
