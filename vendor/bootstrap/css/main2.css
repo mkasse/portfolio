@@ -3003,24 +3003,23 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.spotlight .image {
-			-webkit-box-orient : vertical;
-			-webkit-box-direction : normal; 
-			-ms-flex-direction : column;  
-			flex-direction : column;
-			
-  			-ms-flex-wrap : wrap; 
-  			flex-wrap : wrap;
-			
-			-webkit-box-pack: justify ;
-			-ms-flex-pack: justify ;
-			justify-content: space-between ;
-			
+		.spotlight .image {		
 			width: 30%;
 			margin: 0 3em 3em 0;
 		}
 
 			.spotlight .image img {
+				-webkit-box-orient : vertical;
+				-webkit-box-direction : normal; 
+				-ms-flex-direction : column;  
+				flex-direction : column;
+
+				-ms-flex-wrap : wrap; 
+				flex-wrap : wrap;
+
+				-webkit-box-pack: justify ;
+				-ms-flex-pack: justify ;
+				justify-content: space-between ;
 				display: block;
 				width:100%;
 				height:30%;
