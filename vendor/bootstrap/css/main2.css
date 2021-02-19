@@ -2992,7 +2992,7 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
-		display: -moz-flex;
+		/*display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
@@ -3000,11 +3000,13 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		margin: 0 0 2em 0;
+		margin: 0 0 2em 0;*/
+		height: 300px;
+		width:100%;
 	}
 
 	}
-
+		
 		
 		/*.spotlight .column{
 			float: left;
@@ -3021,7 +3023,8 @@ input, select, textarea {
 			
 		.spotlight .image {	
 			display: block;
-			max-width: 30%;
+			width: 30%;
+			height:100%;
 			float: left;
 			padding:2px;
 			/*margin: 0 3em 3em 0;*/
@@ -3035,6 +3038,7 @@ input, select, textarea {
 
 		.spotlight .content {
 			width: 70%;
+			height:100%;
 		}
 
 			.spotlight .content > :last-child {
