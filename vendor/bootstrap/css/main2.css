@@ -3010,7 +3010,7 @@ input, select, textarea {
 			float: left;
 			width:30%;
 			margin: 0 3em 3em 0;
-			padding:5px;
+			padding:3px;
 		}
 
 		.spotlight .row::after{
