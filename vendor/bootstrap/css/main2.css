@@ -3020,8 +3020,8 @@ input, select, textarea {
 		}*/
 			
 		.spotlight .image {	
-			display: block;
-			margin: 5em 3em 3em 5em;
+			/*display: block;*/
+			margin: 0 3em 3em 0;
 			width: 30%;
 			/*ajout
 			float: left;*/
