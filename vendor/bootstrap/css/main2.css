@@ -3457,12 +3457,13 @@ input, select, textarea {
 	}
 
 		#footer > .inner a:hover {
-			border-bottom-color: #048b9a;
+			border-bottom-color: transparent;
 		}
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255 , 0.15);
+		/*color: rgba(255, 255, 255 , 0.15);*/
+		color:#048b9a;
 	}
 
 	#header + #wrapper + #footer > .inner {
