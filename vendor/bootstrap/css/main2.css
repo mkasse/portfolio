@@ -3001,6 +3001,7 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2em 0;
+		padding:10px;
 	}
 
 	}
@@ -3031,7 +3032,6 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				width: 100%;
-				padding:5px;
 			}
 
 		.spotlight .content {
