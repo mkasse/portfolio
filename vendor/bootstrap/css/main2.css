@@ -3020,8 +3020,8 @@ input, select, textarea {
 		}*/
 			
 		.spotlight .image {	
-			display: flex;
-			/*margin: 0 3em 3em 0;*/
+			display: block;
+			margin: 5em 3em 3em 5em;
 			width: 30%;
 			/*ajout
 			float: left;*/
@@ -3035,7 +3035,6 @@ input, select, textarea {
 
 		.spotlight .content {
 			width: 70%;
-			padding:10px;
 			/*flex-basis:70%;*/
 		}
 
