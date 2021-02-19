@@ -3025,7 +3025,7 @@ input, select, textarea {
 			display: block;
 		}
 
-			.spotlight .image img {
+			.spotlight .column img {
 				display: block;
 				width: 100%;
 				height: auto;
