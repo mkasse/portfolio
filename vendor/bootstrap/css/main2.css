@@ -3055,7 +3055,7 @@ input, select, textarea {
 			}
 
 			.spotlight:nth-child(2n) .content2 {
-				text-align: right;
+				text-align: left;
 			}
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
