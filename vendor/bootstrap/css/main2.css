@@ -3005,15 +3005,24 @@ input, select, textarea {
 
 	}
 
+		
+		.spotlight .column{
+			float: left;
+			width:30%;
+			margin: 0 3em 3em 0;
+			padding:5px;
+		}
 
+		.spotlight .row::after{
+			content:"";
+			display:table;
+			clear:both;
+		}
+			
 		.spotlight .image {		
 			width: 30%;
 			margin: 0 3em 3em 0;
-			/*display: block;*/
-			display: grid;
-			/*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
-			grid-template-columns: 80px 100px 150px;
-			grid-gap: 1em;
+			display: block;
 		}
 
 			.spotlight .image img {
