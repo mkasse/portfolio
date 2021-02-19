@@ -3006,7 +3006,7 @@ input, select, textarea {
 	}
 
 		
-		.spotlight .column{
+		/*.spotlight .column{
 			float: left;
 			width:30%;
 			margin: 0 3em 3em 0;
@@ -3017,18 +3017,20 @@ input, select, textarea {
 			content:"";
 			display:table;
 			clear:both;
-		}
+		}*/
 			
-		.spotlight .image {		
-			width: 30%;
-			margin: 0 3em 3em 0;
+		.spotlight .image {	
 			display: block;
+			width: 30%;
+			float: left;
+			padding:2px;
+			/*margin: 0 3em 3em 0;*/
+
 		}
 
-			.spotlight .column img {
+			.spotlight .image img {
 				display: block;
 				width: 100%;
-				height: auto;
 			}
 
 		.spotlight .content {
