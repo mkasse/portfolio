@@ -3020,7 +3020,6 @@ input, select, textarea {
 		}*/
 			
 		.spotlight .image {	
-			flex-basis:30%;
 			display: block;
 			width: 30%;
 			float: left;
@@ -3030,7 +3029,6 @@ input, select, textarea {
 		}
 
 			.spotlight .image img {
-				flex-basis:30%;
 				display: block;
 				width: 100%;
 			}
