@@ -3457,7 +3457,7 @@ input, select, textarea {
 	}
 
 		#footer > .inner a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: #048b9a;
 		}
 
 	#footer > .inner .menu {
