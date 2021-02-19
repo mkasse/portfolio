@@ -17,7 +17,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Portfolio</a>
+				<a href="index.html" class="title">CV</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -32,65 +32,14 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Projets techniques</h1>
+							<h1 class="major">Mon parcours</h1>
 						</div>
 					</section>
 
 			</div>
 		
 			<section id="one" class="wrapper">
-				<div class="inner">
-					<section class="spotlight">
-						<div class="content">
-							<h3>Cloud Computing</h3>
-							<p>Pour déployer des applications sur un cloud, des techniques de virtualisation sont utilisées. Mais quels sont les avantages et inconvénients de ces techniques ? </p>
-							<p>Durant les travaux pratiques, j’ai appris à créer une machine virtuelle et à tester la connectivité entre machines grâce aux adresse IP. Au travers d’Open Stack, j’ai créé différentes VMs appartenant à un réseau privé et accessible depuis l’extérieur ou depuis le web. Je me suis familiarisé avec les principales commandes bash en Linux et j’ai compris quelques grandes notions en réseau : adressage des adresses IP par DHCP, routage IP, utilisation d’adresse IP flottantes ou encore du protocole SSH. A travers l'utilisation de Docker, j’ai découvert les intérêts des containers. Par exemple, ils simplifient grandement le déploiement d'application cloud et permettent de ne pas avoir à établir manuellement la connectivité entre l’hébergeur et le container.</p>
-							<p>J’ai compris que pour déployer une application cloud en entreprise, il est possible, voire préférable, de placer les services au sein de son propre réseau puis d’établir une règle de routage vers le réseau du site client à qui l’accès sera autorisé.</p>
-
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Machine-to-Machine</h3>
-							<p>Les objets communiquent entre eux ou vers un serveur par des protocoles dédiés à l’Internet des Objets. Il existe de nombreux protocoles. Heureusement, des consortiums permettent d’utiliser des objets connectés fonctionnant sur différents protocoles.</p>
-							<p>J’ai testé la connexion par le protocole MQTT entre un microcontrôleur ESP826 et un serveur (ici mon ordinateur). Arduino a été utilisé en y important la librairie du microcontrôleur. Dans une architecture MQTT, les capteurs publient des données et le serveur souscrit à différents « topics » (ex : température, humidité, etc…). La connexion se faisant par wifi, on pourrait questionner la consommation énergétique de chaque nœud. Etant donné que le protocole MQTT repose sur le protocole TCP/IP, son utilisation reste néanmoins limitée aux protocoles internet. Quels sont les protocoles qui utilisent l’adressage IP ?</p>
-							<p>Dans une autre phase, j’ai interagi avec une application ampoule grâce au protocole oneM2M. Ce protocole de communication possède une sémantique particulière à respecter avec les ressources d’Application Entities, de Container et de Container Instances. En utilisant des requêtes REST, j’ai réussi à créer différentes ressources. L’interaction entre l’application et les ressources a été à moitié remplie. Une action sur la lampe entrainait bien la génération d’une nouvelle ressource dans oneM2M. Cependant, j’ai failli à valider l’interaction dans l’autre sens : de oneM2M vers l’application lampe pour allumer ou éteindre la lampe à partir des requêtes REST.</p>
-							<p>Node-Red permet de connecter des équipements hardware, des APIs et des services en ligne. J’ai créé des flux différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe. La connexion entre oneM2M et Node-Red est faite grâce au Point of Access. Par conséquent, l’arbre de ressource de oneM2M est modifié à partir de Node-Red ce qui a pour conséquence de modifier l’état de la lampe (éteinte ou allumée). Il m’a fallu développer quelques bouts de codes en JavaScript. Cependant, j’aurais aimé aller jusqu’au bout de l’exercice en interagissant complètement avec l’application lampe.</p>
-
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Architecture de service et Ingénierie logicielle</h3>
-							<p>L’apprentissage de la création d’applications durant la formation a été faite sur Java en utilisant le compilateur Eclipse. Différentes architectures de services sont envisageables et ont été abordées.</p> 
-							<p>J’ai expérimenté le protocole SOAP et l’architecture orientée ressources REST au travers d’exercices simples.</p> 
-							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture RESTful. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment) via des requêtes RESTful.</p> 
-
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
-						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
-						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
-						<div class="content">
-							<h3>Réalisation d'un capteur en salle blanche</h3>
-							<p>Le capteur est un composant majeur dans un objet connecté. Le processus de fabrication détermine la précision des valeurs recuellies.</p>
-							<p>J'ai appris à suivre une procédure permettant de réaliser un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur et afin de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un circuit construit dans le but de lire les données du capteur sur un microcontrolleur Arduino.</p>
-							<p>L'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur notamment par la modification de sa résistivité.</p> 
-							<ul class="actions">
-								<li><a href="/images/Gas_Sensor_Datasheet.pdf" download="Gas_Sensor_Datasheet.pdf" class="button big">Report</a></li>
-							</ul>
-						</div>
-					</section>
-				</div>
+				
 			</section>
 		
 
