@@ -3001,7 +3001,6 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2em 0;
-		padding:10px;
 	}
 
 	}
@@ -3026,6 +3025,7 @@ input, select, textarea {
 			width: 30%;
 			/*ajout*/
 			float: left;
+			padding:10px;
 
 		}
 
@@ -3036,6 +3036,7 @@ input, select, textarea {
 
 		.spotlight .content {
 			width: 70%;
+			padding:10px;
 			/*flex-basis:70%;*/
 		}
 
