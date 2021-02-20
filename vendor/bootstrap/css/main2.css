@@ -2992,25 +2992,86 @@ input, select, textarea {
 /* Spotlight */
 
 .spotlight {
-	border: 3px solid blue;
-	padding: 20px 40px 40px;
-	max-width: 1250px;
-	display: flex;
-	&__images {
-		padding: 20px 40px 40px;
-		max-width: 375px;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
 		display: flex;
-		&__img {
-			margin: 20px 30px 0 0;
-			width: 150px;
-			object-fit: contain;
-			align-self: flex-start;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+
 		}
+		.spotlight .image {
+			width: 30%;
+			/*border-radius: 100%;*/
+			margin: 0 3em 3em 0;
+			display: block;
+		}
+
+			.spotlight .image img {
+				display: block;
+				/*border-radius: 100%;*/
+				width: 100%;
+			}
+
+		.spotlight .content {
+			width: 70%;
+		}
+
+			.spotlight .content > :last-child {
+				margin-bottom: 0;
+			}
+
+		.spotlight:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+			.spotlight:nth-child(2n) .image {
+				margin: 0 0 0 3em;
+			}
+
+			.spotlight:nth-child(2n) .content2 {
+				text-align: right;
+			}
+
+	@media screen and (max-width: 736px) and (orientation: landscape) {
+
+		.spotlight .image {
+			margin: 0 2em 0 0;
+		}
+
+		.spotlight:nth-child(2n) .image {
+			margin: 0 0 0 2em;
+		}
+
 	}
-	&__content {
-		flex: 1 1 auto;
-	}
-}
+
+	@media screen and (max-width: 736px) and (orientation: portrait) {
+
+		.spotlight {
+			-moz-flex-direction: column !important;
+			-webkit-flex-direction: column !important;
+			-ms-flex-direction: column !important;
+			flex-direction: column !important;
+		}
+
+			.spotlight .image {
+				width: 100%;
+				max-width: 60%;
+				margin: 0 0 2em 0 !important;
+			}
+
+			.spotlight .content {
+				width: 100%;
+				text-align: left !important;
+			}
+
 		
 
 
