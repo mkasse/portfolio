@@ -60,10 +60,10 @@
 						<div class="content">
 							<h3>Machine-to-Machine</h3>
 							<p>Les objets communiquent entre eux ou vers un serveur par des protocoles dédiés à l’Internet des Objets. Il existe de nombreux protocoles. Heureusement, des consortiums permettent d’utiliser des objets connectés fonctionnant sur différents protocoles.</p>
-							<p>J’ai testé la connexion par le protocole MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. Dans une architecture MQTT, les capteurs publient des données et le serveur souscrit à différents « topics » (ex : température, humidité, etc…). Ce protocol nécessite d'être connecté à internet.</p>
+							<p>J’ai testé la connexion par le protocole MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
 							<p>Dans une autre phase, j’ai interagi avec une application ampoule grâce au protocole oneM2M. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe.</p>
-							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des flux différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
-							<p>Ces trois protocoles permettent de communiquer au niveau des couches applicatives des réseaux sans fil. J'aimerais comprendre dans quels cas les utiliser.</p>
+							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des "flows" différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
+							<p>Ces trois protocoles permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du protocole dépendra de l'architecture de l'application.</p>
 							<ul class="actions">
 								<li><a href="rapports/Tp_intergiciel_INSA_Cloury_Kasse.pdf" download="Tp_intergiciel_INSA_Cloury_Kasse.pdf" class="button big">Rapport</a></li>
 							</ul>
@@ -77,10 +77,9 @@
 						<div class="image"><img src="images/pic09.jpg" alt="" /></div>
 						<div class="content">
 							<h3>Architecture de service et Ingénierie logicielle</h3>
-							<p>L’apprentissage de la création d’applications durant la formation a été faite sur Java en utilisant le compilateur Eclipse. Différentes architectures de services sont envisageables et ont été abordées.</p> 
-							<p>J’ai expérimenté le protocole SOAP et l’architecture orientée ressources REST au travers d’exercices simples.</p> 
-							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture RESTful. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment) via des requêtes RESTful.</p> 
-
+							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture RESTful. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. </p>
+							<p>Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment) via des requêtes RESTful.</p> 
+							<p>Nous sommes directement partis sur une architecture SOAP mais peut-être aurions-nous pu choisir une autre architecture, comme celles abordées durant les différents exercices.</p> 
 						</div>
 					</section>
 					<section class="spotlight">
