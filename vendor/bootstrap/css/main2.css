@@ -3018,7 +3018,7 @@ input, select, textarea {
 		}
 
 			.spotlight .image .colonne{
-			    flex-flow: column nowrap;
+			    flex-flow: column wrap;
 			}
 
 				.spotlight .image .colonne .img {
