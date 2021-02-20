@@ -56,7 +56,7 @@
 							<h3>Machine-to-Machine</h3>
 							<p>Les objets communiquent entre eux ou vers un serveur par des protocoles dédiés à l’Internet des Objets. Il existe de nombreux protocoles. Heureusement, des consortiums permettent d’utiliser des objets connectés fonctionnant sur différents protocoles.</p>
 							<p>J’ai testé la connexion par le protocole MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
-							<p>Dans une autre phase, j’ai interagi avec une application ampoule grâce au protocole oneM2M. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe.</p>
+							<p>Dans une autre phase, j’ai interagi avec une application ampoule grâce au protocole oneM2M. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe (allumée ou éteinte).</p>
 							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des "flows" différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
 							<p>Ces trois protocoles permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du protocole dépendra de l'architecture de l'application. A approfondir...</p>
 							<ul class="actions">
@@ -78,9 +78,9 @@
 						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
 						<div class="content">
 							<h3>Réalisation d'un capteur en salle blanche</h3>
-							<p>Le capteur est un composant majeur dans un objet connecté. Le processus de fabrication détermine la précision des valeurs recuellies.</p>
-							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des ses caractéristiques intrinsèques. J'ai suivi et participé à la fabrication d'un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur et afin de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un circuit construit dans le but de lire les données du capteur sur un microcontrolleur Arduino.</p>
-							<p>L'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur notamment par la modification de sa résistivité. Ce capteur a permis de caractériser différents gaz.</p> 
+							<p>Le capteur est un composant majeur dans un objet connecté. Toutes les données relevées sont issues de capteurs.</p>
+							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. J'ai suivi et participé à la fabrication d'un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB fabriqué sur mesure.</p>
+							<p>L'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur. L'évolution de la résistivité permet au capteur de lire une donnée. Il est possible alors de caractériser différents gaz détectés.</p> 
 							<ul class="actions">
 								<li><a href="/images/Gas_Sensor_Datasheet.pdf" download="Gas_Sensor_Datasheet.pdf" class="button big">Report</a></li>
 							</ul>
@@ -91,7 +91,7 @@
 							<h3>Méthode d’Innovation</h3>
 							<p>L’innovation est au cœur des produits développés dans le domaine de l’IOT c’est pourquoi il est important d’en comprendre les enjeux et les méthodes.</p>
 							<p>L’innovation est beaucoup plus rationnelle que cela me paraissait. L’analyse des innovations passées a permis d’établir des lois générales pouvant être utilisées pour déterminer les innovations futures. En binôme, j’ai appliqué la méthode TRIZ pour trouver des pistes d’innovation pour la chaussure.</p>
-							<p>Cette méthode apporte des pistes intéressantes pour innover. Néanmoins existe-t-il d’autres méthodes sur lesquelles se baser ? Un avantage incontestable est la base de données considérable de projets industriels utilisée par la matrice TRIZ. </p>
+							<p>Cette méthode apporte des pistes intéressantes pour innover. Bien qu'il existe d'autres méthodes, la méthode TRIZ utilise une matrice TRIZ qui comporte une base de données considérable de projets industriels. Pour innover, il est alors possible de se baser sur des innovations précédantes.</p>
 						</div>
 					</section>
 					<section class="spotlight">
@@ -106,15 +106,16 @@
 						<div class="content">
 							<h3>Réseaux émergents</h3>
 							<p>La révolution des objets connectés nécessite de faire évoluer Internet afin de garantir une mobilité des nœuds et une plus grande flexibilité des réseaux. De nouvelles technologies sont apparues pour répondre à ces contraintes : SDN pour une meilleure gestion des réseaux et LISP pour un meilleur support à la mobilité des nœuds.</p>
-							<p>Le technologie SDN (Software Defined Network) offre l’opportunité d’établir des règles de routage facilement configurables. J’ai mis en place un réseau constitué de 3 ordinateurs utilisant les protocoles COAP et SSH pour communiquer. J’ai réalisé le câblage au routeur et à la console pour établir le réseau. Enfin, j’ai créé différentes règles de routage depuis l’application Openflow écrite en python et depuis le contrôleur (en commande bash).</p>
-							<p>Après expérimentation, l’application de cette technologie dans un réseau sans fil est questionnable. Une solution serait de connecter le serveur au contrôleur. Le routeur (ou switch) serait supprimé. Et chaque nœud aurait une interface (type OpenFlow) installée.  Cela reste à valider.</p>
+							<p>La technologie SDN (Software Defined Network) offre l’opportunité d’établir des règles de routage facilement configurables. J’ai mis en place un réseau d'ordinateurs utilisant les protocoles COAP et SSH pour communiquer. J’ai réalisé la connectique entre les ordinateurs, le routeur et la console. Enfin, j’ai créé différentes règles de routage depuis l’application Openflow (langage Python) et depuis le contrôleur (en commande bash).</p>
+							<p>Après expérimentation, l’application de cette technologie dans un réseau sans fil est questionnable. Au cours de cette expérience, j'ai utilisé des "brigdes" pour établir un réseau. Un microcontrôleur peut embarquer un nombre de briques important, équivalent aux "bridges", permettant le passage à l'échelle. Ainsi, on comprend pourquoi la technologie SDN s'avère intéressante face aux nombre grandissant d'objets connectés. </p>
 						</div>
 					</section>
 					<section class="spotlight">
 						<div class="content">
 							<h3>Strategy & Marketting</h3>
-							<p>L’innovation étant au cœur de cette formation, la connaissance du processus menant à la création d’une start-up peut s’avérer très utile. J’ai ainsi bénéficié de précieux conseils en la matière toujours accompagnés de cas pratiques. A partir d’une idée étroitement liée à mes valeurs, j’ai exprimé clairement un projet de start-up en appliquant une méthode d’innovation. Enfin, j’ai réuni les informations nécessaires pour monter un discours convaincant afin de vendre ce projet à d’éventuels investisseurs.</p>
-							<p>La création d’une start-up peut être compliqué surtout au niveau financier. C’est un des freins principaux. L’intervention d’un entrepreneur aguerri a permis de mieux appréhender la question financière liée au lancement d’une start-up. En effet, cela m’a ouvert les yeux sur le fait que de nombreuses solutions existent. </p>
+							<p>L’innovation étant au cœur de cette formation, la connaissance du processus menant à la création d’une start-up peut s’avérer très utile. J’ai ainsi bénéficié de précieux conseils en la matière toujours accompagnés de cas pratiques. A partir d’une idée étroitement liée à mes valeurs, j’ai exprimé clairement un projet de start-up en appliquant une méthode d’innovation. Avec méthode, j’ai réuni les informations nécessaires pour monter un discours convaincant afin de vendre ce projet à d’éventuels investisseurs.</p>
+							<p>La création d’une start-up peut être compliqué surtout au niveau financier. C’est un des freins principaux. L’intervention d’un entrepreneur aguerri a permis de mieux appréhender la question financière liée au lancement d’une start-up. En effet, cela m’a ouvert les yeux sur le fait que de nombreuses solutions existent.</p>
+							<p>La propriété intellectuelle est essentielle pour accompagner les innovations de demain c'est pourquoi il est important d'en connaître les principaux aspects tels que le droit d'auteur ou le brevet.</p>
 						</div>
 					</section>
 					<section class="spotlight">
@@ -123,6 +124,39 @@
 							<p>En fonction des applications, les contraintes dans les réseaux sans fil changent. Dans les réseaux critiques, une notion de détermine intervient. Un message de données doit arriver dans un laps de temps bien précis. Tout débordement pourrait entraîner un risque pour l’utilisateur.</p>
 							<p>La synchronisation des réseaux est primordiale et est obtenue par différentes méthodes. Le beacon est aussi un élément dont la fonction est de coordonner les nœuds dans les réseaux en mesh ou étoile. Différents modes utilisant des beacons existent et peuvent être classés par leur niveau de déterminisme : GTS et TSCH. Ces modes sont appliqués pour des réseaux locaux. Pour les réseaux connectés à Internet, un autre mode permet de rendre des adresses routables : 6Tisch.</p>
 							<p>En pratique, j’ai pu synchroniser un émetteur et un récepteur en introduisant le temps dans chacune des trames transmises par l’émetteur et en adaptant l’horloge du récepteur à partir du décodage de la trame reçue. J’ai expérimenté le mode RPL avec le protocole Contiki grâce auquel j’ai mis en place un réseau mesh. Je me suis familiarisé également avec l’analyse de trames.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Sécurité IOT</h3>
+							<p>L’IOT est aussi sujet aux problèmes de sécurité que connais l’internet en général. Néanmoins, les attaquants peuvent accéder directement aux objets connectés. Cela nécessite donc de mettre en place d’autres mécanismes de sécurité. Mais la sécurité implique des coûts supplémentaires. Malheureusement, on y pense qu’après le déploiement du produit et voire quand une première attaque a eu lieu. Une prise de conscience doit être faite pour penser sécurité en amont dès le développement du produit.</p>
+							
+							<mark>Expérience 1</mark>
+							
+							<p>J’ai testé une attaque sur buffer d’un ordinateur. Remis dans le contexte de l’IOT, cela peut se réaliser sur un microcontrôleur. Les personnes malveillantes surveillent toute variation de la consommation énergétique des objets connectés et profitent de chaque changement d’état pour réaliser des injections. L’attaque a consisté à modifier l’ordre d’exécution d’un programme en C en modifiant les adresses de retour dans le buffer. A la suite de cette mise en pratique, je me questionne sur les mécanismes à mettre en place pour limiter ces fuites.</p>
+							
+							<mark>Expérience 2</mark>
+							
+							<p>Je suis désormais beaucoup plus conscient des failles de sécurité dans le Web. J’ai réalisé comment il peut être facile d’exploiter les failles de sécurité, notamment pour se connecter sans login ni mot de passe ou encore pour récupérer un cookie tiers afin de se connecter sur une autre machine avec une autre identité. La plupart de ces manipulations a été faite en exploitant le langage SQL.</p>
+							
+							<mark>Expérience 3</mark>
+							
+							<p>La cryptographie est un mécanisme de sécurité qui consiste à écrire et partager un secret entre deux destinataires. Dans un système IOT, le cryptage d’une communication entre deux nœuds passe par une signature, un chiffrement asymétrique et un chiffrement symétrique. Chaque message échangé reçoit une signature. Un chiffrement asymétrique permet l’échange rapide de la clé pour décoder les messages. Enfin, le chiffrement symétrique permet aux nœuds de communiquer en toute sécurité. J’ai compris en quoi l’algorithme AES assurait une sécurité importante, notamment par rapport à l’algorithme RSA.
+							Néanmoins le chiffrement peut faire l’objet d’attaques physiques par la fuite au niveau des registres des microcontrôleurs, appelées aussi « side-channel attack » (SCA). La recherche traite sérieusement ce sujet et nous verrons certainement dans quelques années des compilateurs prenant en compte les micro-architecture des microcontrôleurs. Cependant, il intéressant d’en être conscient car il est possible de mettre en place des actions simples qui peuvent empêcher ces fuites. A partir de l’analyse des registres lors de l’exécution d’un code, j’ai remarqué avec quelle facilité les registres pouvaient faire fuir des informations importantes comme par exemple la clé de sécurité. 
+							Dans une deuxième partie, j’ai mis en place une communication sécurisée par le protocole TLS en utilisant RSA comme algorithme de chiffrement symétrique. J’ai appris qu’il était possible de créer, simplement et rapidement sa propre autorité de certification sans avoir à passer par une compagnie tierce. Concrètement, on génère un certificat auto-signé qui délivre une clé sécurisée par RSA et une clé de vérification. Ce certificat est ensuite utilisé pour « signer » les communications entre nœuds communicants.
+							</p>
+							
+							<mark>Expérience 4</mark>
+							
+							<p>La sensibilisation autour des attaques physiques dans le milieu de l’IOT est importante. Pour cela, j’ai vécu différentes expérimentations en séances de travaux pratiques.</p>
+							<p>Voici les cas que j’ai observés :</p>
+							<ul>
+							  <li>Un premier cas à consister à récupérer le code composé par une personne accédant au site de sa banque en ligne.</li>
+							  <li>Un deuxième cas a consisté à prendre le contrôle d’un objet connecté à partir de l’écoute, de l’enregistrement et de la retransmission du signal transmis par une télécommande à l’objet. Ce cas a permis de montrer l’utilité de mettre en place un comptage des séquences ou un chiffrement. </li>
+							  <li>Un troisième cas a consisté à observer un cas de brouillage réactif par l’envoi d’un signal parasite pour empêcher tout appairage avec un appareil Bluetooth.</li>
+							  <li>Un quatrième cas a consisté à observer une attaque par un man-in-the-middle dans le cas d’un réseau mesh. La connaissance des méthodes utilisées par les hackers permet d’avoir une réflexion constructive autour des solutions qui peuvent être envisagées.</li>
+							</ul>
+							
 						</div>
 					</section>
 					<section class="spotlight">
