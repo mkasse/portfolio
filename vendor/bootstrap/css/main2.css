@@ -3063,6 +3063,7 @@ input, select, textarea {
 
 		.spotlight .image {
 			margin: 0 2em 0 0;
+			flex: 1 1 auto;
 		}
 
 		.spotlight:nth-child(2n) .image {
@@ -3081,13 +3082,15 @@ input, select, textarea {
 		}
 
 			.spotlight .image {
-				width: 30%;
+				/*width: 30%;*/
+				flex: 1 1 auto;
 				/*max-width: 30%;*/
 				margin: 0 0 2em 0 !important;
 			}
 
 			.spotlight .content {
-				width: 70%;
+				/*width: 70%;*/
+				flex: 1 1 auto;
 				text-align: left !important;
 			}
 
