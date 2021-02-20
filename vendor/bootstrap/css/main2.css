@@ -2994,7 +2994,7 @@ input, select, textarea {
 .spotlight {
 	border: 3px solid blue;
 	padding: 20px 40px 40px;
-	max-width: 640px;
+	max-width: 1200px;
 	&__elementIm {
 		display: inline-block;
 		vertical-align: top;
