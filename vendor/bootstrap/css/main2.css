@@ -2992,15 +2992,15 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
-		display: -moz-flex;
+		/*display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		/*margin: 0 0 2em 0;*/
+		margin: 0 0 2em 0;*/
+		display: flex;
 		flex-wrap: wrap; /*autorise passage à la ligne*/
 		flex-direction: column; /*axe principal est la column*/
 	}
@@ -3025,7 +3025,6 @@ input, select, textarea {
 			/*display: block;*/
 			/*margin: 0 3em 3em 0;*/
 			/*flex: 1 1 auto;*/
-			float: left;
 			width: 30%;
 
 		}
