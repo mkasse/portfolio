@@ -3004,6 +3004,7 @@ input, select, textarea {
 	}
 	&__elementTxt {
 		flex: 1 1 auto;
+		flex-basis:70%;
 	}
 }
 		
