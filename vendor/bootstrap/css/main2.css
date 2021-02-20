@@ -2995,37 +2995,32 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
+		display: flex;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2em 0;
-		display: flex;
 	}
 
 	}
 			
 		.spotlight .image {	
-			/*display: block;
-			margin: 0 3em 3em 0;*/
-			/*flex: 1 1 auto;*/
-			/*width: 30%;*/
-			flex-basis: 30%;
-			flex-wrap: wrap;
-			margin: 0 0 2em 0;
+			width: 30%;
+			/*border-radius: 100%;*/
+			margin: 0 3em 3em 0;
+			display: block;
 
 		}
 
 			.spotlight .image img {
-				/*display: block;*/
+				display: block;
+				/*border-radius: 100%;*/
 				width: 100%;
-				flex-wrap: wrap;
 			}
 
 		.spotlight .content {
-			/*width: 70%;*/
-			/*flex: 1 1 auto;*/
-			flex-basis: 70%;
+			width: 70%;
 		}
 
 			.spotlight .content > :last-child {
@@ -3040,28 +3035,21 @@ input, select, textarea {
 		}
 
 			.spotlight:nth-child(2n) .image {
-				margin: 0 0 2em 0;
-				flex-basis: 30%;
-				flex-wrap: wrap;
+				margin: 0 0 0 3em;
 			}
 
 			.spotlight:nth-child(2n) .content {
 				text-align: right;
-				flex-basis: 70%;
 			}
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
 		.spotlight .image {
 			margin: 0 0 2em 0;
-			flex-basis: 30%;
-			flex-wrap: wrap;
 		}
 
 		.spotlight:nth-child(2n) .image {
-			margin: 0 0 2em 0;
-			flex-basis: 30%;
-			flex-wrap: wrap;
+			margin: 0 0 0 2em;
 		}
 
 	}
@@ -3076,15 +3064,13 @@ input, select, textarea {
 		}
 
 			.spotlight .image {
-				/*max-width: 30%;*/
-				flex-basis: 30%;
-				flex-wrap: wrap;
+				width: 100%;
+				max-width: 30%;
 				margin: 0 0 2em 0 !important;
 			}
 
 			.spotlight .content {
-				/*width: 70%;*/
-				flex-basis: 70%;
+				width: 100%;
 				text-align: left !important;
 			}
 
