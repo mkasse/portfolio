@@ -3010,6 +3010,7 @@ input, select, textarea {
 			margin: 0 3em 3em 0;
 			display: block;*/
 			display: flex;
+			flex-basis: 30%;
 			font-size: 20px;
 			background-color: #0AD; /*Bleu*/
 			border: 2px solid blue;
