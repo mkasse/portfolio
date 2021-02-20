@@ -3005,20 +3005,18 @@ input, select, textarea {
 
 		}
 		.spotlight .image {
-			width: 30%;
-			/*border-radius: 100%;*/
-			margin: 0 3em 3em 0;
+			width: 200px;
+			margin: 25px 50px;
 			display: block;
 		}
 
 			.spotlight .image img {
 				display: block;
-				/*border-radius: 100%;*/
 				width: 100%;
 			}
 
 		.spotlight .content {
-			width: 70%;
+			width: 1000px;
 		}
 
 			.spotlight .content > :last-child {
@@ -3062,13 +3060,13 @@ input, select, textarea {
 		}
 
 			.spotlight .image {
-				width: 100%;
-				max-width: 60%;
+				/*width: 100%;
+				max-width: 60%;*/
 				margin: 0 0 2em 0 !important;
 			}
 
 			.spotlight .content {
-				width: 100%;
+				/*width: 100%;*/
 				text-align: left !important;
 			}
 
