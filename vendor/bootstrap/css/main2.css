@@ -2991,119 +2991,25 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		margin: 0 0 2em 0;
+.spotlight {
+	border: 3px solid blue;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	&__elementIm {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+		margin: 20px 30px 0 0;
 	}
-
+	&__elementTxt {
+		display: inline-block;
+		width: 70%;
+		@media (max-width: 620px){
+			width: 100%;
+		}
 	}
-			
-		.spotlight .image {	
-			/*width: 60%;
-			margin: 0 3em 3em 0;
-			display: block;*/
-			display: flex;
-			flex-basis: 30%;
-			font-size: 20px;
-			background-color: #0AD; /*Bleu*/
-			border: 2px solid blue;
-			box-sizing: border-box;
-			margin: 10px 0px;
-		}
-
-			.spotlight .image .colonne{
-			    flex-flow: column wrap;
-			}
-
-				.spotlight .image .colonne .img {
-					/*display: block;
-					width: 100%;
-					flex-shrink: 1;*/
-					flex-basis: 20%;
-					flex-grow: 1;
-					flex-shrink: 1;
-					background-color: #0DA; /*Vert*/
-					padding: 10px 0px;
-					text-align: center;
-					border: 2px solid green;
-					box-sizing: border-box;
-					margin: 5px;
-				}
-
-		.spotlight .content {
-			/*width: 70%;*/
-			flex-basis: 70%;
-			flex-grow: 1;
-			flex-shrink: 1;
-			background-color: #0DA; /*Vert*/
-			padding: 10px 0px;
-			text-align: center;
-			border: 2px solid green;
-			box-sizing: border-box;
-			margin: 5px;
-		}
-
-			.spotlight .content > :last-child {
-				margin-bottom: 0;
-			}
-
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
-
-			.spotlight:nth-child(2n) .image {
-				margin: 0 0 0 3em;
-				flex-shrink: 2;
-			}
-
-			.spotlight:nth-child(2n) .content {
-				text-align: right;
-			}
-
-	@media screen and (max-width: 736px) and (orientation: landscape) {
-
-		.spotlight .image {
-			margin: 0 0 2em 0;
-		}
-
-		.spotlight:nth-child(2n) .image {
-			margin: 0 0 0 2em;
-		}
-
-	}
-
-	@media screen and (max-width: 736px) and (orientation: portrait) {
-
-		.spotlight {
-			-moz-flex-direction: column !important;
-			-webkit-flex-direction: column !important;
-			-ms-flex-direction: column !important;
-			flex-direction: column !important;
-		}
-
-			.spotlight .image {
-				width: 100%;
-				max-width: 30%;
-				margin: 0 0 2em 0 !important;
-				flex-shrink: 1;
-			}
-
-			.spotlight .content {
-				width: 100%;
-				text-align: left !important;
-			}
-
-	}
+}
+		
 
 
 /* Table */
