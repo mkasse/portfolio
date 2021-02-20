@@ -3023,10 +3023,10 @@ input, select, textarea {
 			
 		.spotlight .image {	
 			/*display: block;*/
-			margin: 0 3em 3em 0;
-			flex: 1 1 auto;
-			/*ajout
-			float: left;*/
+			/*margin: 0 3em 3em 0;*/
+			/*flex: 1 1 auto;*/
+			float: left;
+			width: 30%;
 
 		}
 
@@ -3036,8 +3036,8 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			/*width: 70%;*/
-			flex: 1 1 auto;
+			width: 70%;
+			/*flex: 1 1 auto;*/
 		}
 
 			.spotlight .content > :last-child {
