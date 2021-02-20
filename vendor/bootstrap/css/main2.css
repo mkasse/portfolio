@@ -2994,15 +2994,20 @@ input, select, textarea {
 .spotlight {
 	border: 3px solid blue;
 	padding: 20px 40px 40px;
-	max-width: 1200px;
+	max-width: 1250px;
 	display: flex;
-	&__elementIm {
-		margin: 20px 30px 0 0;
-		flex-basis: 100px;
-		object-fit: contain;
-		align-self: flex-start;
+	&__images {
+		padding: 20px 40px 40px;
+		max-width: 375px;
+		display: flex;
+		&__img {
+			margin: 20px 30px 0 0;
+			width: 150px;
+			object-fit: contain;
+			align-self: flex-start;
+		}
 	}
-	&__elementTxt {
+	&__content {
 		flex: 1 1 auto;
 	}
 }
