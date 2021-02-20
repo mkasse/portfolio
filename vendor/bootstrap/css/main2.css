@@ -3025,7 +3025,7 @@ input, select, textarea {
 			/*display: block;*/
 			margin: 0 3em 3em 0;
 			/*flex: 1 1 auto;*/
-			width: 30%;
+			flex-basis: 30%;
 
 		}
 
@@ -3035,7 +3035,7 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			width: 70%;
+			flex-basis: 70%;
 			/*flex: 1 1 auto;*/
 		}
 
@@ -3081,13 +3081,13 @@ input, select, textarea {
 		}
 
 			.spotlight .image {
-				*width: 30%;
+				flex-basis: 30%;
 				/*max-width: 30%;*/
 				margin: 0 0 2em 0 !important;
 			}
 
 			.spotlight .content {
-				width: 70%;
+				flex-basis: 70%;
 				text-align: left !important;
 			}
 
