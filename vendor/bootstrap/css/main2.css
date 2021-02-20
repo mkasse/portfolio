@@ -3001,8 +3001,8 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		/*margin: 0 0 2em 0;*/
-		flex-wrap: wrap;
-		flex-direction: row;
+		flex-wrap: wrap; /*autorise passage à la ligne*/
+		flex-direction: column; /*axe principal est la column*/
 	}
 
 	}
@@ -3024,7 +3024,7 @@ input, select, textarea {
 		.spotlight .image {	
 			/*display: block;*/
 			margin: 0 3em 3em 0;
-			flex-basis: 30%;
+			flex: 1 1 auto;
 			/*ajout
 			float: left;*/
 
@@ -3037,7 +3037,7 @@ input, select, textarea {
 
 		.spotlight .content {
 			/*width: 70%;*/
-			flex-basis:70%;
+			flex: 1 1 auto;
 		}
 
 			.spotlight .content > :last-child {
