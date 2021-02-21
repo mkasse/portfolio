@@ -2560,7 +2560,7 @@ input, select, textarea {
 				}
 /* Image page2 */
 
-	.image {
+	/*.image {
                 width : 200px;
                 heigth : 150px;
 		border: 0;
@@ -2615,7 +2615,7 @@ input, select, textarea {
 				width: 100%;
 			}
 	.image {
-		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;*/
 	}
 /* List */
 
