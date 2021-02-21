@@ -3034,6 +3034,9 @@ input, select, textarea {
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
+			margin: 5px 5px 5px 5px;
+			padding: 20px 40px 40px;
+			max-width: 1200px;
 		}
 
 			.spotlight:nth-child(2n) .image {
