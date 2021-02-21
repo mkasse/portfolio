@@ -3038,7 +3038,12 @@ input, select, textarea {
 		}
 
 			.spotlight:nth-child(2n) .image {
-				margin: 0 0 0 3em;
+				/*margin: 0 0 0 3em;*/
+				margin: 20px 30px 0 30px;
+				width: 300px;
+				object-fit: contain;
+				align-self: flex-start;
+				display: block;
 			}
 
 			.spotlight:nth-child(2n) .content {
