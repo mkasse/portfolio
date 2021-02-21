@@ -2992,13 +2992,13 @@ input, select, textarea {
 /* Spotlight */
 
 .spotlight {
-		display: -moz-flex;
+		/*display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
+		display: -ms-flex;*/
 		display: flex;
-		-moz-align-items: center;
+		/*-moz-align-items: center;
 		-webkit-align-items: center;
-		-ms-align-items: center;
+		-ms-align-items: center;*/
 		align-items: center;
 		/*margin: 0 0 2em 0;*/
 		margin: 5px 5px 5px 5px;
@@ -3006,7 +3006,6 @@ input, select, textarea {
 	  	max-width: 1200px;
 	}
 
-		}
 		.spotlight .image {
 			/*display: block;*/
 			margin: 20px 30px 0 30px;
@@ -3030,9 +3029,9 @@ input, select, textarea {
 			}
 
 		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
+			/*-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;*/
 			flex-direction: row-reverse;
 		}
 
