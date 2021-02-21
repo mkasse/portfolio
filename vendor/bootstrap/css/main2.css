@@ -3013,14 +3013,14 @@ input, select, textarea {
 		}
 
 			.spotlight .image img {
-				/*display: block;*/
-				width: 100%;
+				/*display: block;
+				width: 100%;*/
 				object-fit: contain;
 				align-self: flex-start;
 			}
 
 		.spotlight .content {
-			width: 800px;
+			flex: 1 1 auto;
 		}
 
 			.spotlight .content > :last-child {
