@@ -163,22 +163,22 @@
 							<h3>Sécurité IOT</h3>
 							<p>L’IOT est aussi sujet aux problèmes de sécurité que connais l’internet en général. Néanmoins, les attaquants peuvent accéder directement aux objets connectés. Cela nécessite donc de mettre en place d’autres mécanismes de sécurité. Mais la sécurité implique des coûts supplémentaires. Malheureusement, on y pense qu’après le déploiement du produit et voire quand une première attaque a eu lieu. Une prise de conscience doit être faite pour penser sécurité en amont dès le développement du produit.</p>
 							
-							<mark>Expérience 1</mark>
+							<cite>Expérience 1</cite>
 							
 							<p>J’ai testé une attaque sur buffer d’un ordinateur. Remis dans le contexte de l’IOT, cela peut se réaliser sur un microcontrôleur. Les personnes malveillantes surveillent toute variation de la consommation énergétique des objets connectés et profitent de chaque changement d’état pour réaliser des injections. L’attaque a consisté à modifier l’ordre d’exécution d’un programme en C en modifiant les adresses de retour dans le buffer. A la suite de cette mise en pratique, je me questionne sur les mécanismes à mettre en place pour limiter ces fuites.</p>
 							
-							<mark>Expérience 2</mark>
+							<cite>Expérience 2</cite>
 							
 							<p>Je suis désormais beaucoup plus conscient des failles de sécurité dans le Web. J’ai réalisé comment il peut être facile d’exploiter les failles de sécurité, notamment pour se connecter sans login ni mot de passe ou encore pour récupérer un cookie tiers afin de se connecter sur une autre machine avec une autre identité. La plupart de ces manipulations a été faite en exploitant le langage SQL.</p>
 							
-							<mark>Expérience 3</mark>
+							<cite>Expérience 3</cite>
 							
 							<p>La cryptographie est un mécanisme de sécurité qui consiste à écrire et partager un secret entre deux destinataires. Dans un système IOT, le cryptage d’une communication entre deux nœuds passe par une signature, un chiffrement asymétrique et un chiffrement symétrique. Chaque message échangé reçoit une signature. Un chiffrement asymétrique permet l’échange rapide de la clé pour décoder les messages. Enfin, le chiffrement symétrique permet aux nœuds de communiquer en toute sécurité. J’ai compris en quoi l’algorithme AES assurait une sécurité importante, notamment par rapport à l’algorithme RSA.
 							Néanmoins le chiffrement peut faire l’objet d’attaques physiques par la fuite au niveau des registres des microcontrôleurs, appelées aussi « side-channel attack » (SCA). La recherche traite sérieusement ce sujet et nous verrons certainement dans quelques années des compilateurs prenant en compte les micro-architecture des microcontrôleurs. Cependant, il intéressant d’en être conscient car il est possible de mettre en place des actions simples qui peuvent empêcher ces fuites. A partir de l’analyse des registres lors de l’exécution d’un code, j’ai remarqué avec quelle facilité les registres pouvaient faire fuir des informations importantes comme par exemple la clé de sécurité. 
 							Dans une deuxième partie, j’ai mis en place une communication sécurisée par le protocole TLS en utilisant RSA comme algorithme de chiffrement symétrique. J’ai appris qu’il était possible de créer, simplement et rapidement sa propre autorité de certification sans avoir à passer par une compagnie tierce. Concrètement, on génère un certificat auto-signé qui délivre une clé sécurisée par RSA et une clé de vérification. Ce certificat est ensuite utilisé pour « signer » les communications entre nœuds communicants.
 							</p>
 							
-							<mark>Expérience 4</mark>
+							<cite>Expérience 4</cite>
 							
 							<p>La sensibilisation autour des attaques physiques dans le milieu de l’IOT est importante. Pour cela, j’ai vécu différentes expérimentations en séances de travaux pratiques.</p>
 							<p>Voici les cas que j’ai observés :</p>
