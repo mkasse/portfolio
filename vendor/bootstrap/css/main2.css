@@ -3057,7 +3057,9 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(2n) .image {
-			margin: 0 0 0 2em;
+			/*margin: 0 0 0 2em;*/
+			margin: 20px 30px 0 30px;
+			
 		}
 
 	}
