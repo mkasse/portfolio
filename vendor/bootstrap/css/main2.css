@@ -3021,6 +3021,7 @@ input, select, textarea {
 
 		.spotlight .content {
 			flex: 1 1 auto;
+			text-align: justify;
 		}
 
 			.spotlight .content > :last-child {
