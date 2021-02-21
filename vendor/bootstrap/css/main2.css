@@ -3019,7 +3019,6 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				object-fit: contain;
-				flex-wrap: wrap;
 			}
 
 		.spotlight .content {
@@ -3038,7 +3037,12 @@ input, select, textarea {
 		}
 
 			.spotlight:nth-child(2n) .image {
-				margin: 0 10em 0 3em;
+				/*margin: 0 10em 0 3em;*/
+				margin: 20px 30px 0 30px;
+				width: 300px;
+				object-fit: contain;
+				align-self: flex-start;
+				display: block;
 			}
 
 			.spotlight:nth-child(2n) .content {
@@ -3070,8 +3074,7 @@ input, select, textarea {
 			.spotlight .image {
 				/*width: 100%;
 				max-width: 60%;*/
-				/*margin: 0 0 2em 0 !important;*/
-				margin: 0 5px 0 0;
+				margin: 0 0 2em 0 !important;
 			}
 
 			.spotlight .content {
