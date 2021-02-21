@@ -58,12 +58,12 @@
 					</section>
 					<section class="spotlight">
 						<div class="content">
-							<h3>Machine-to-Machine</h3>
-							<p>Les objets communiquent entre eux ou vers un serveur par des protocoles dédiés à l’Internet des Objets. Il existe de nombreux protocoles. Heureusement, des consortiums permettent d’utiliser des objets connectés fonctionnant sur différents protocoles.</p>
-							<p>J’ai testé la connexion par le protocole MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
-							<p>Dans une autre phase, j’ai interagi avec une application ampoule grâce au protocole oneM2M. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe (allumée ou éteinte).</p>
+							<h3>Langages Machine-to-Machine</h3>
+							<p>Dans l'IOT, des protocoles et standards ont été créés pour communiquer d'objet à objet. Bien qu'il existe un nombre important de protocoles et standards, nous nous sommes concentrés sur les principaux et les plus utilisés dans le milieu.</p>
+							<p>J’ai testé le protocole de communication MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
+							<p>J'ai interagi avec une application ampoule grâce au standard oneM2M. L'avantage de oneM2M est qu'il peut s'utiliser dans tous les domaines d'activités. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe (allumée ou éteinte).</p>
 							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des "flows" différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
-							<p>Ces trois protocoles permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du protocole dépendra de l'architecture de l'application. A approfondir...</p>
+							<p>Ces trois standards permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du standard dépendra fortement de plusieurs critères que j'ai identifiés durant mon apprentissage. Node-red est complémentaire à oneM2M et MQTT. C'est un outil très simple à utiliser notamment pour faire des tableaux esthétiques à partir des données recueillies des capteurs.</p>
 							<ul class="actions">
 								<li><a href="rapports/Tp_intergiciel_INSA_Cloury_Kasse.pdf" download="Tp_intergiciel_INSA_Cloury_Kasse.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/application_skills.pdf" download="application_skills.pdf" class="button big">Tableau de compétences</a></li>
@@ -74,9 +74,9 @@
 						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
 						<div class="content">
 							<h3>Architecture de service et Ingénierie logicielle</h3>
-							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture RESTful. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. </p>
-							<p>Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment) via des requêtes RESTful.</p> 
-							<p>Nous sommes directement partis sur une architecture SOAP mais peut-être aurions-nous pu choisir une autre architecture, comme celles abordées durant les différents exercices.</p> 
+							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture orientée services. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. </p>
+							<p>Nous avons choisi une architecture SOA (orientée services). Chacune des fonctions assurées par notre application a été scindée en plusieurs services. Ainsi chacun de nous a pu travailler sur un service en parallèle tout en adoptant une méthode agile grâce à l'utilisation de JIRA.</p>
+							<p>Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment)..</p>  
 							<ul class="actions">
 								<li><a href="rapports/Automatic_Room_Managment_report.pdf" download="Automatic_Room_Managment_report.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/SOA_skills.pdf" download="SOA_skills.pdf" class="button big">Tableau de compétences</a></li>
@@ -86,10 +86,17 @@
 					<section class="spotlight">
 						<div class="image"><img src="images/capteur.JPG" alt="" /></div>
 						<div class="content">
-							<h3>Réalisation d'un capteur en salle blanche</h3>
+							<h3>Capteur intelligent</h3>
 							<p>Le capteur est un composant majeur dans un objet connecté. Toutes les données relevées sont issues de capteurs.</p>
-							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. J'ai suivi et participé à la fabrication d'un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB fabriqué sur mesure.</p>
+							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. J'ai suivi et participé à la fabrication d'un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB conçu sur Kicad. La conception du circuit a fait appel à des notions en électronique car, la valeur de la résistivité du capteur étant beaucoup trop faible pour être utilisable sur un microcontrôleur, il a fallu augmenter cette valeur par l'ajout d'un amplificateur. L'utilisation de LTSpice a permis de simuler le circuit afin de valider la conception du circuit.</p>
+							<p>Un objet connecté contient un microcontrôleur. J'ai utilisé la Arduino Uno pour réaliser plusieurs projets ludiques: </p>
+							<ul>
+							  	<li>Création d'une application bluetooth sur Inventor, avec reconnaissance vocale</li>
+								<li>Configuration d'un touchpad</li>
+								<li>Communication avec passerelle LoRa</li>
+							</ul>
 							<p>L'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur. L'évolution de la résistivité permet au capteur de lire une donnée. Il est possible alors de caractériser différents gaz détectés.</p> 
+							<p>Même si j'avais déjà quelques connaissances sur Arduino, cet enseignement m'a permis de prendre de la hauteur afin de comprendre le fonctionnement générale d'un microcontrôleur.</p>
 							<ul class="actions">
 								<li><a href="/images/Gas_Sensor_Datasheet.pdf" download="Gas_Sensor_Datasheet.pdf" class="button big">Report</a></li>
 								<li><a href="skills/smartdevices(sensor)_skills.pdf" download="smartdevices(sensor)_skills.pdf" class="button big">>Tableau de compétences</a></li>
