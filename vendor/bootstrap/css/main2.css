@@ -3078,6 +3078,11 @@ input, select, textarea {
 
 	}	
 
+/* Surligné */
+cite {
+  font-style: normal;
+  text-decoration: underline;
+}
 
 /* Table */
 
