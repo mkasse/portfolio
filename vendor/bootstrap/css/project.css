@@ -3995,6 +3995,11 @@ cite {
 				width: 100%;
 			}
 
+			.image.fit2 img {
+				width: auto;
+				height: auto;
+			}
+
 			.image.fit imgmap {
 				object-fit:contain;
 				max-width: 100%;
