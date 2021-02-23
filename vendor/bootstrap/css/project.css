@@ -3992,10 +3992,7 @@ cite {
 		}
 
 			.image.fit img {
-				width: 100%;
-			}
-
-			.image.fit img2 {
+				/*width: 100%;*/
 				width: auto;
 			}
 
