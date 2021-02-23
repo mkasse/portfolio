@@ -3994,6 +3994,7 @@ cite {
 			.image.fit img {
 				/*width: 100%;*/
 				width: auto;
+				text-align: center;
 			}
 
 			.image.fit imgmap {
