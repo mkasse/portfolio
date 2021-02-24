@@ -63,7 +63,7 @@
 							<p>J’ai testé le protocole de communication MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
 							<p>J'ai interagi avec une application ampoule grâce au standard oneM2M. L'avantage de oneM2M est qu'il peut s'utiliser dans tous les domaines d'activités. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe (allumée ou éteinte).</p>
 							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des "flows" différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
-							<p>Ces trois standards permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du standard dépendra fortement de plusieurs critères que j'ai identifiés durant mon apprentissage. Node-red est complémentaire à oneM2M et MQTT. C'est un outil très simple à utiliser notamment pour faire des tableaux esthétiques à partir des données recueillies des capteurs.</p>
+							<p>OneM2M et MQTT permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du standard dépendra fortement de plusieurs critères que j'ai identifiés durant mon apprentissage. Node-red est complémentaire à oneM2M et MQTT. C'est un outil très simple à utiliser notamment pour faire des tableaux esthétiques à partir des données recueillies des capteurs.</p>
 							<ul class="actions">
 								<li><a href="rapports/Tp_intergiciel_INSA_Cloury_Kasse.pdf" download="Tp_intergiciel_INSA_Cloury_Kasse.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/application_skills.pdf" download="application_skills.pdf" class="button big">Tableau de compétences</a></li>
@@ -87,16 +87,16 @@
 						<div class="image"><img src="img/capteur.JPG" alt="test" /></div>
 						<div class="content">
 							<h3>Capteur intelligent</h3>
-							<p>Le capteur est un composant majeur dans un objet connecté. Toutes les données relevées sont issues de capteurs.</p>
-							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. J'ai suivi et participé à la fabrication d'un capteur de gaz à base de nanoparticules de tungsten. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de délivrer une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB conçu sur Kicad. La conception du circuit a fait appel à des notions en électronique car, la valeur de la résistivité du capteur étant beaucoup trop faible pour être utilisable sur un microcontrôleur, il a fallu augmenter cette valeur par l'ajout d'un amplificateur. L'utilisation de LTSpice a permis de simuler le circuit afin de valider la conception du circuit.</p>
-							<p>Un objet connecté contient un microcontrôleur. J'ai utilisé la Arduino Uno pour réaliser plusieurs projets ludiques: </p>
+							<p>Le capteur est un composant majeur dans un objet connecté. Toutes les données relevées sont issues de capteurs. Dans une salle blanche, j'ai suivi un procédé de fabrication chimique pour fabriquer un capteur de gaz à base de nanoparticules de tungsten.</p>
+							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de construire une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB conçu sur le logiciel Kicad. La conception du circuit a fait appel à des notions en électronique car, la valeur de la résistivité du capteur étant beaucoup trop faible pour être utilisable sur un microcontrôleur, il a fallu augmenter cette valeur par l'ajout d'un amplificateur. L'utilisation de LTSpice a permis de simuler le circuit afin de valider la conception du circuit.</p>
+							<p>Un microcontrôleur est présent dans chaque objet connecté. Il est donc nécessaire d'en comprendre l'architecture et le fonctionnement au travers de projets ludiques sur Arduino:</p>
 							<ul>
 							  	<li>Création d'une application bluetooth sur Inventor, avec reconnaissance vocale</li>
 								<li>Configuration d'un touchpad</li>
 								<li>Communication avec passerelle LoRa</li>
 							</ul>
-							<p>L'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur. L'évolution de la résistivité permet au capteur de lire une donnée. Il est possible alors de caractériser différents gaz détectés.</p> 
-							<p>Même si j'avais déjà quelques connaissances sur Arduino, cet enseignement m'a permis de prendre de la hauteur afin de comprendre le fonctionnement générale d'un microcontrôleur.</p>
+							<p>Pour conclure, l'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur. L'évolution de la résistivité permet au capteur de lire une donnée. Il est possible alors de caractériser différents gaz détectés.</p> 
+							<p>Même si j'avais déjà quelques connaissances sur Arduino, je comprends mieux le fonctionnement générale d'un microcontrôleur. Arduino est un microcontrôleur simple d'utilisation souvent utilisé dans l'éducation. Chaque microcontrôleur possède ses spécificités mais le principe reste le même.</p>
 							<ul class="actions">
 								<li><a href="rapports/Gas_Sensor_Datasheet.pdf" download="Gas_Sensor_Datasheet.pdf" class="button big">Report</a></li>
 								<li><a href="skills/smartdevices(sensor)_skills.pdf" download="smartdevices(sensor)_skills.pdf" class="button big">Tableau de compétences</a></li>
@@ -142,9 +142,9 @@
 						<div class="image"><img src="img/business.JPG" alt="test" /></div>
 						<div class="content">
 							<h3>Strategy & Marketting</h3>
-							<p>L’innovation étant au cœur de cette formation, la connaissance du processus menant à la création d’une start-up peut s’avérer très utile. J’ai ainsi bénéficié de précieux conseils en la matière toujours accompagnés de cas pratiques. A partir d’une idée étroitement liée à mes valeurs, j’ai exprimé clairement un projet de start-up en appliquant une méthode d’innovation. Avec méthode, j’ai réuni les informations nécessaires pour monter un discours convaincant afin de vendre ce projet à d’éventuels investisseurs.</p>
-							<p>La création d’une start-up peut être compliqué surtout au niveau financier. C’est un des freins principaux. L’intervention d’un entrepreneur aguerri a permis de mieux appréhender la question financière liée au lancement d’une start-up. En effet, cela m’a ouvert les yeux sur le fait que de nombreuses solutions existent.</p>
-							<p>La propriété intellectuelle est essentielle pour accompagner les innovations de demain c'est pourquoi il est important d'en connaître les principaux aspects tels que le droit d'auteur ou le brevet.</p>
+							<p>L’innovation étant au cœur de cette formation, la connaissance du processus menant à la création d’une start-up peut s’avérer très utile. J’ai ainsi bénéficié de précieux conseils en la matière toujours accompagnés de cas pratiques. A partir d’une idée étroitement liée à mes valeurs, j’ai appliqué les outils et méthodes enseignés afin de construire un business model et un business plan solide. Grâce à cela, j'ai construit un discours pour convaincre d'éventuel investisseurs.</p>
+							<p>L’intervention d’un entrepreneur aguerri a permis de mieux appréhender la question financière liée au lancement d’une start-up. En effet, cela m’a ouvert les yeux sur le fait que de nombreuses solutions de financement existent. D'autres aspects liés à la propriété intellectuelle sont importants à la création d'une start-up. Nous avons mis l'accent principalement sur les brevets et le droit d'auteur.</p>
+							<p>Enfin, le montage d'un business plan implique d'avoir quelques notions en comptabilité. Grâce à cet enseignement, je suis alerte à tous les éléments à prendre en compte pour calculer coûts, trèsorerie et cash-flow.</p>
 						</div>
 					</section>
 					<section class="spotlight">
@@ -224,7 +224,9 @@
 					<section class="spotlight">
 						<div class="content">
 							<h3>Radio logicielle SDR</h3>
-							<p>La radion logicielle permet de faire du traitement de signal numérique. Au cours de cette expérience, j'ai acquis les notions principales en traitement de signal. J'ai ensuite réalisé de la modulation de fréquence et d'amplitude sur GNU Radio Companion.</p>
+							<p>Le Software Design Radio (SDR) est un type d’émetteur-récepteur où la modulation et la démodulation est faite de manière numérique. Un système peut embarquer plusieurs applications différentes en termes de technologies, de fréquence de modulation ou d’encodage. L’utilisation de SDR permet d’utiliser ces applications de manière simultanée et de les faire évoluer facilement. La recherche se penche sur la modulation et la démodulation de signaux dans les réseaux sans fil, en utilsant la radio logicielle. L'enjeu est de transporter le signal sur de longues distances.</p>
+							<p>L'expérience a consisté à démoduler un signal par la modulation d'amplitude et de fréquence et à appliquer des filtres pour récupérer le signal propre de tel sorte qu'on puisse l'écouter. Avant d'utiliser le logiciel GNU Radio, j'ai acquis des notions essentielles au traitement de signal.</p>
+							
 						</div>
 					</section>												  
 				</div>
