@@ -3007,16 +3007,19 @@ input, select, textarea {
 	}
 
 		.spotlight .image {
-			margin: 20px 30px 0 30px;
-			width: 300px;
-			object-fit: contain;
+			/*margin: 20px 30px 0 30px;*/
+			/*width: 300px;*/
+			/*object-fit: contain;*/
 			align-self: flex-start;
 			display: block;
 		}
 
 			.spotlight .image img {
 				display: block;
-				object-fit: contain;
+				/*object-fit: contain;*/
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 		.spotlight .content {
