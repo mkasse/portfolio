@@ -3012,14 +3012,15 @@ input, select, textarea {
 			/*object-fit: contain;*/
 			align-self: flex-start;
 			display: block;
+			flex-basis:100%;
+
 		}
 
 			.spotlight .image img {
 				display: block;
+				max-width:100%;
 				/*object-fit: contain;*/
-				height: auto;
-				margin-left: auto;
-				margin-right: auto;
+				
 			}
 
 		.spotlight .content {
