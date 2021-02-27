@@ -3010,7 +3010,7 @@ input, select, textarea {
 			/*margin: 20px 30px 0 30px;*/
 			/*width: 300px;*/
 			/*object-fit: contain;*/
-			align-self: flex-start;
+			align-self: center;
 			display: block;
 			flex-basis:100%;
 
