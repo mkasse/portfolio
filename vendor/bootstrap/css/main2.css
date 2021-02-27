@@ -3018,7 +3018,7 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				/*object-fit: contain;*/
-				flex-basis:70%;
+				flex-basis:30%;
 			}
 
 		.spotlight .content {
