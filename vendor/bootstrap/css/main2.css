@@ -3012,7 +3012,7 @@ input, select, textarea {
 			/*object-fit: contain;*/
 			align-self: flex-start;
 			display: block;
-			flex-basis:80%;
+			flex-basis:100%;
 
 		}
 
