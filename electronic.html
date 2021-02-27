@@ -41,14 +41,10 @@
 			<section id="one" class="wrapper">
 				<div class="inner">		
 					<section class="spotlight">
-						<div class="image">
-							<img src="img/cloud.JPG" alt="test height:"50%" />
-						</div>
 						<div class="content">
 							<h3>Cloud Computing</h3>
 							<p>Pour déployer des applications sur un cloud, des techniques de virtualisation sont utilisées. Il est possible de déployer des machines virtuelles ou de créer des containers pour virtualiser des serveurs. La virtualisation est utilisée pour déployer rapidement et facilement des logiciels et les tester à grande échelle. Par conséquent, elle est largement utilisée dans l'IOT où les contraintes de coûts sont grandes.</p>
-							<p>Durant les travaux pratiques, j’ai appris à créer une machine virtuelle et à tester la connectivité entre machines grâce aux adresse IP. Au travers d’Open Stack, j’ai créé différentes VMs appartenant à un réseau privé et accessible depuis l’extérieur ou depuis le web. Je me suis familiarisé avec les principales commandes bash en Linux et j’ai compris quelques grandes notions en réseau : adressage des adresses IP par DHCP, routage IP, utilisation d’adresse IP flottantes ou encore du protocole SSH. A travers l'utilisation de Docker, j’ai découvert l'intérêts d'utiliser des containers. Par exemple, ils simplifient grandement le déploiement d'application cloud et permettent de ne pas avoir à établir manuellement la connectivité entre l’hébergeur et le container.</p>
-							<p>J’ai compris que pour déployer une application cloud en entreprise, il est possible, voire préférable, de placer les services au sein de son propre réseau puis d’établir une règle de routage vers le réseau du site client à qui l’accès sera autorisé.</p>
+							<p>Durant les travaux pratiques, j’ai appris à créer une machine virtuelle et à tester la connectivité entre machines grâce aux adresses IP. A l'aide d’Open Stack, j’ai créé différentes VMs appartenant à un réseau privé et accessibles depuis l’extérieur ou depuis le web. Je me suis familiarisé avec les principales commandes bash en Linux et j’ai compris quelques grandes notions en réseau. A travers l'utilisation de Docker, j’ai découvert l'intérêt d'utiliser des containers. Ils simplifient grandement le déploiement d'application cloud et permettent de ne pas avoir à établir manuellement la connectivité entre l’hébergeur et le container. Pour déployer des applications, les services sont créés sur le réseau de l'entreprise qui les développe et des règles de routage sont mise en place pour chacun des clients pour faire évoluer ces applications. </p>
 							<ul class="actions">
 								<li><a href="rapports/cloud_computing_report.pdf" download="cloud_computing_report.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/cloud_skills.pdf" download="cloud_skills.pdf" class="button big">Tableau de compétences</a></li>	
@@ -56,14 +52,13 @@
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="img/machine.JPG" alt="test" /></div>
 						<div class="content">
 							<h3>Langages Machine-to-Machine</h3>
-							<p>Dans l'IOT, des protocoles et standards ont été créés pour communiquer d'objet à objet. Bien qu'il existe un nombre important de protocoles et standards, nous nous sommes concentrés sur les principaux et les plus utilisés dans le milieu.</p>
-							<p>J’ai testé le protocole de communication MQTT entre un microcontrôleur ESP8266 et un serveur (ici mon ordinateur) en utilisant Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
-							<p>J'ai interagi avec une application ampoule grâce au standard oneM2M. L'avantage de oneM2M est qu'il peut s'utiliser dans tous les domaines d'activités. J'ai appris la sémantique particulière  et je me suis servi de requêtes REST pour interagir avec l'application. J'ai été en mesure de générer des instances dans l'arbre de ressource sans changement d'état de la lampe (allumée ou éteinte).</p>
-							<p>Node-Red permet de connecter des équippements hardware, des APIs et des services en ligne. J’ai créé des "flows" différents (fonctions reliées entre elles) permettant d’interagir avec oneM2M et avec l’application lampe même si le côté application n'a pas fontionné.</p>
-							<p>OneM2M et MQTT permettent de communiquer au niveau des couches applicatives des réseaux sans fil. Le choix du standard dépendra fortement de plusieurs critères que j'ai identifiés durant mon apprentissage. Node-red est complémentaire à oneM2M et MQTT. C'est un outil très simple à utiliser notamment pour faire des tableaux esthétiques à partir des données recueillies des capteurs.</p>
+							<p>Dans l'IOT, des protocoles et standards ont été créés pour communiquer d'objet à objet. Bien qu'il existe un nombre important de protocoles et de standards, nous nous sommes concentrés sur les principaux et les plus utilisés dans le milieu.</p>
+							<p>Le protocole MQTT permet de souscrire à des types de données ou "topics" et de publier des types de données. Pour la mise en pratique de ce protocole, j'ai utilisé un microcontrôleur ESP8266 programmable sur Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
+							<p>J'ai interagi avec une application existante grâce au standard oneM2M. J'ai appris la sémantique particulière et je me suis servi de requêtes REST pour interagir avec cette application.</p>
+							<p>Enfin, l'utilisation de Node-Red a permis de créer des règles utilisant MQTT ou oneM2M pour interagir avec une application. L'ensemble des données recueillies peut être présentées sous forme de dashbords.</p>
+							<p></p>
 							<ul class="actions">
 								<li><a href="rapports/Tp_intergiciel_INSA_Cloury_Kasse.pdf" download="Tp_intergiciel_INSA_Cloury_Kasse.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/application_skills.pdf" download="application_skills.pdf" class="button big">Tableau de compétences</a></li>
@@ -74,9 +69,9 @@
 						<div class="image"><img src="img/architecture.JPG" alt="test" /></div>
 						<div class="content">
 							<h3>Architecture de service et Ingénierie logicielle</h3>
-							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture orientée services. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Je me suis intéressé à la réalisation de tests unitaires mais je n’ai pas eu le temps de l’appliquer à notre projet. </p>
-							<p>Nous avons choisi une architecture SOA (orientée services). Chacune des fonctions assurées par notre application a été scindée en plusieurs services. Ainsi chacun de nous a pu travailler sur un service en parallèle tout en adoptant une méthode agile grâce à l'utilisation de JIRA.</p>
-							<p>Il aurait également été intéressant d’utiliser oneM2M pour compléter ce projet. En effet, nous aurions pu, à partir de notre application web, interagir avec l’application lampe (déjà utilisée précédemment)..</p>  
+							<p>Un des objectifs premiers lors du développement d'applications est l'interopérabilité. Il existe principalement deux architectures orientées services ou ressources.</p>
+							<p>Durant les travaux pratiques, j'ai travaillé sur Java et sur Eclipse pour créer des services web. Une application fonctionne grâce à l'invocation de web services par un client via des requêtes. Le protocole SOAP est utilisé pour l'envoi de requêtes. Néanmoins, ce protocole atteint ces limites en terme d'interopérabilité. Même si l'architecture REST ne permet pas une interopérabilité complète, elle est très simple d'utilisation. Pour rendre les applications accessibles sur le web, le protocole HTTP est utilisé et les ressources sont manipulées grâce à des méthodes simples et intuitives de type GET,POST,DELETE,UPDATE... Pour rendre interopérable les applications, il a été essentiel de comprendre les formats d'échange standard de données tels que XML ou JSON. </p>
+							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture orientée services. Nous avons intégré Maven dans chaque service afin de pouvoir travailler chacun sous différents IDE et automatiser la compilation. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant Jenkins. Nous avons travaillé avec une méthode agile grâce à l'utilisation de JIRA. Pour compléter cette expérience, nous aurions pu interagir avec oneM2M.</p>
 							<ul class="actions">
 								<li><a href="rapports/Automatic_Room_Managment_report.pdf" download="Automatic_Room_Managment_report.pdf" class="button big">Rapport</a></li>
 								<li><a href="skills/SOA_skills.pdf" download="SOA_skills.pdf" class="button big">Tableau de compétences</a></li>
