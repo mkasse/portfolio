@@ -3012,6 +3012,9 @@ input, select, textarea {
 			/*object-fit: contain;*/
 			align-self: flex-start;
 			display: block;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			.spotlight .image img {
