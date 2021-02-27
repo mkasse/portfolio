@@ -42,13 +42,13 @@
 				<div class="inner">		
 					<h2>Réalisation d'un POC pour géolocalisation outdoor</h2>
 					<h3>Contexte</h3>
-					<p>Ce projet répond à un besoin industriel avec un cahier des charges à respecter. Le proof-of-concept doit permettre de géolocaliser des personnes : une gateway ou point central (un maître du jeu) doit être en mesure de visualiser sur une carte les positions des différents noeuds (membre d'une équipe). Une fonction simple doit aussi permettre d'échanger des messages simples entre noeud et passerelle. </p>
+					<p>Ce projet proposé par une entreprise a consisté à réaliser un proof-of-concept permettant de géolocaliser des personnes et d'échanger des messages simples. Chaque personne peux envoyer des messages simples à une base et peux connaitre la position de la base grâce à une application installée sur un smartphone en sa possesion. La base peut observer en temps réel les positions de chaque personne, lire les messages et envoyer des messages vers les noeuds. La distance entre la base et les noeuds est maximum de 4km. Un protocole de commmunication adéquat doit être sélectionné pour respecter cette portée. Le POC aura une autonomie de 72 heures.</p>
 					
 					<h3>Equipe</h3>
 					<p>L'équipe était composée de 5 étudiants en informatique et réseaux, en automatique et en électronique... et moi avec mon background de mécanicien.</p>
 					
 					<h3>Technologies</h3>
-					<p>Le projet necessitait de combiner plusieurs protocoles de communication : Lora, LTE, Bluetooth et SMS.</p>
+					<p>Pour répondre au cahier des charges, nous avons choisi la mangoh yellow de SierraWireless. L'avantage de ce microcontrôleur est qu'il intègre plusieurs capteurs et plusieurs protocoles de communication. Il était prévu d'utiliser le protocole Lora grâce à une extension à installer sur la mangoh. Néanmois, aucune librairie n'a été implémentée avec cette extension. Ainsi, nous  avons décidé de remplacer le protocole Lora par le réseau cellulaire. La mangoh yellow possède une carte SIM et permet l'envoi de SMS. Le Bluetooth Low Energy a également été implémenté sur la mangoh pour permettre la communication entre le smartphone et le POC.</p>
 				</div>
 				<!--<div class="row">
 					<div class="column">
