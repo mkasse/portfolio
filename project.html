@@ -53,14 +53,15 @@
 					<p>Le Bluetooth Low Energy a également été implémenté sur la mangoh pour permettre la communication entre le smartphone et le POC. Le POC reçoit les coordonnées GNSS de la base par SMS puis les retransfère au smartphone par BLE. Inversement, chaque message simple est envoyé à partir de l'application du smartphone vers le POC par BLE, puis le message est transféré à la base par SMS.</p>
 					<p>Une application développée sur Android intègre une carte de France disponible hors-ligne. L'application installée sur le smartphone permet de visualiser la position de la base et de pouvoir envoyer des messages via 3 boutons disponibles. La base dispose d'une tablette où est installée la même application mais qui permet de visualiser la position de l'ensemble des noeuds.</p>
 					
+					<h3>Ma contribution</h3>
+					<p>J'ai été chargé d'établir la communication Bluetooth BLE sur la mangoh. Une première partie a consisté à comprendre toute la partie théorique sur le BLE. Pour la partie pratique, j'ai installé un shell sous Linux afin d'utiliser la mangoh. Je me suis ensuite inspiré d'une application existante développée en C que j'ai adaptée aux besoins du projet. Dans une troisième partie, j'ai participé à l'intégration de la réception et de l'émission de SMS dans le code. Enfin, pour aider à la gestion du projet, j'ai apporté mes connaissances en MS Project pour établir un planning et répartir les tâches par membre de l'équipe.</p> 
+					
 					<h3>Résultats</h3>
 					<p>Nous avons réussi à développer l'application en C sous environnement Linux installée sur le POC. Cette application permet de réceptionner et envoyer les coordonées GNSS dans un SMS. Elle permet aussi de transférer ces mêmes coordonnées GNSS et les messages par BLE au smartphone ou à la tablette.</p>
 					<p>Nous avons testé notre solution avec 2 noeuds. Avec plus de noeuds, la communication pourrait être désynchronisée.</p>
 					<p>Nous n'avons pas eu le temps de nous intéresser à la consommation totale du POC afin de proposer une batterie adaptée.</p>
 					<p>Pour conclure, l'utilisation du réseau cellulaire est avantageux par rapport au réseau Lora car la couverture est large et il n'y a pas de limitation en terme de portée à partir du moment où il y a du réseau. Un autre groupe de projet travaillant sur le même sujet a choisi une autre solution et a réussi à utiliser le réseau Lora. Néanmoins, ils ont été limité à 1km de portée sans obstacle. </p>
-					
-					<h3>Ma contribution</h3>
-					<p>J'ai été chargé d'établir la communication Bluetooth BLE sur la mangoh. Une première partie a consisté à comprendre toute la partie théorique sur le BLE. Pour la partie pratique, j'ai installé un shell sous Linux afin d'utiliser la mangoh. Je me suis ensuite inspiré d'une application existante développée en C que j'ai adaptée aux besoins du projet. Dans une troisième partie, j'ai participé à l'intégration de la réception et de l'émission de SMS dans le code. Enfin, pour aider à la gestion du projet, j'ai apporté mes connaissances en MS Project pour établir un planning et répartir les tâches par membre de l'équipe.</p> 
+		
 				</div>
 				<!--<div class="row">
 					<div class="column">
