@@ -1,1 +1,261 @@
 
+
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="vendor/bootstrap/css/main2.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+	
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Projets techniques</h1>
+						</div>
+					</section>
+
+			</div>
+		
+			<section id="one" class="wrapper">
+				<div class="inner">		
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/laas.JPG" alt="" /></div>-->
+						<div class="content">
+							<h3>Cloud Computing</h3>
+							<p>Pour déployer des applications sur un cloud, des techniques de virtualisation sont utilisées. Il est possible de déployer des machines virtuelles ou de créer des containers pour virtualiser des serveurs. La virtualisation est utilisée pour déployer rapidement et facilement des logiciels et les tester à grande échelle. Par conséquent, elle est largement utilisée dans l'IOT où les contraintes de coûts sont grandes.</p>
+							<p>Durant les travaux pratiques, j’ai appris à créer une machine virtuelle et à tester la connectivité entre machines grâce aux adresses IP. A l'aide d’<b>Open Stack</b>, j’ai créé différentes VMs appartenant à un réseau privé et accessibles depuis l’extérieur ou depuis le web. Je me suis familiarisé avec les principales commandes bash en Linux et j’ai compris quelques grandes notions en réseau. A travers l'utilisation de <b>Docker</b>, j’ai découvert l'intérêt d'utiliser des containers. Ils simplifient grandement le déploiement d'application cloud et permettent de ne pas avoir à établir manuellement la connectivité entre l’hébergeur et le container. Pour déployer des applications, les services sont créés sur le réseau de l'entreprise qui les développe et des règles de routage sont mise en place pour chacun des clients pour faire évoluer ces applications. </p>
+							<ul class="actions">
+								<li><a href="rapports/cloud_computing_report.pdf" download="cloud_computing_report.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/cloud_skills.pdf" download="cloud_skills.pdf" class="button big">Tableau de compétences</a></li>	
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Langages Machine-to-Machine</h3>
+							<p>Dans l'IOT, des protocoles et standards ont été créés pour communiquer d'objet à objet. Bien qu'il existe un nombre important de protocoles et de standards, nous nous sommes concentrés sur les principaux et les plus utilisés dans le milieu.</p>
+							<p>Le protocole <b>MQTT</b> permet de souscrire à des types de données ou "topics" et de publier des types de données. Pour la mise en pratique de ce protocole, j'ai utilisé un microcontrôleur ESP8266 programmable sur Arduino. J'ai créé un "topic" température auquel je me suis abonné afin de recevoir toutes les notifications de température provenant du capteur embarqué sur le microcontrôleur.</p>
+							<p>J'ai interagi avec une application existante grâce au standard <b>oneM2M</b>. J'ai appris la sémantique particulière et je me suis servi de requêtes REST pour interagir avec cette application.</p>
+							<p>Enfin, l'utilisation de <b>Node-Red</b> a permis de créer des règles utilisant MQTT ou oneM2M pour interagir avec une application. L'ensemble des données recueillies peut être présentées sous forme de dashboards.</p>
+							<ul class="actions">
+								<li><a href="rapports/Tp_intergiciel_INSA_Cloury_Kasse.pdf" download="Tp_intergiciel_INSA_Cloury_Kasse.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/middleware_skills.pdf" download="middleware_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/architecture.JPG" alt="test" /></div>-->
+						<div class="content">
+							<h3>Architecture de service et Ingénierie logicielle</h3>
+							<p>Un des objectifs premiers lors du développement d'applications est l'interopérabilité. Il existe principalement deux architectures orientées services ou ressources.</p>
+							<p>Durant les travaux pratiques, j'ai travaillé sur <b>Java</b> et sur <b>Eclipse</b> pour créer des services web. Une application fonctionne grâce à l'invocation de web services par un client via des requêtes. Le protocole SOAP est utilisé pour l'envoi de requêtes. Néanmoins, ce protocole atteint ces limites en terme d'interopérabilité. Même si l'<b>architecture REST</b> ne permet pas une interopérabilité complète, elle est très simple d'utilisation. Pour rendre les applications accessibles sur le web, le protocole HTTP est utilisé et les ressources sont manipulées grâce à des méthodes simples et intuitives de type GET,POST,DELETE,UPDATE... Pour rendre interopérable les applications, il a été essentiel de comprendre les formats d'échange standard de données tels que <b>XML ou JSON</b>. </p>
+							<p>Au cours d’un projet réalisé dans une équipe de 3 étudiants, nous avons développé une application Web de gestion de capteurs au sein d’une salle. L’application que nous avons développée est basée sur une architecture orientée ressources. Nous avons intégré Maven dans chaque service afin de pouvoir travailler chacun sous différents IDE et automatiser la compilation. J’ai développé différents services possédant des méthodes invoquées par l’application créée. Mes collègues se sont ensuite chargés de l’intégration complète en utilisant <b>Jenkins</b>. Nous avons travaillé avec une méthode agile grâce à l'utilisation de <b>JIRA</b>. Pour compléter cette expérience, nous aurions pu interagir avec oneM2M.</p>
+							Lien de la page Git : <a href:"https://github.com/emileseb/AutomaticRoomManagment/">https://github.com/emileseb/AutomaticRoomManagment</a>
+							<ul class="actions">
+								<li><a href="rapports/Automatic_Room_Managment_report.pdf" download="Automatic_Room_Managment_report.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/SOA_skills.pdf" download="SOA_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="img/capteur.JPG" alt="test" /></div>
+						<div class="content">
+							<h3>Capteur intelligent</h3>
+							<p>Le capteur est un composant majeur dans un objet connecté. Toutes les données relevées sont issues de capteurs. Dans une salle blanche, j'ai suivi un procédé de fabrication chimique pour fabriquer un capteur de gaz à base de nanoparticules de tungsten.</p>
+							<p>J'ai compris en quoi chaque étape de la fabrication d'un capteur est déterminante pour la qualité des caractéristiques intrinsèques du capteur. Après réalisation du capteur, différentes mesures ont été réalisées afin de caractériser le capteur dans le but de construire une fiche de données type constructeur. Ce capteur a ensuite été intégré sur dans un PCB conçu sur le logiciel Kicad. La conception du circuit a fait appel à des notions en électronique car, la valeur de la résistivité du capteur étant beaucoup trop faible pour être utilisable sur un microcontrôleur, il a fallu augmenter cette valeur par l'ajout d'un amplificateur. L'utilisation de LTSpice a permis de simuler le circuit afin de valider la conception du circuit.</p>
+							<p>Un microcontrôleur est présent dans chaque objet connecté. Il est donc nécessaire d'en comprendre l'architecture et le fonctionnement au travers de projets ludiques sur Arduino:</p>
+							<ul>
+							  	<li>Création d'une application bluetooth sur Inventor, avec reconnaissance vocale</li>
+								<li>Configuration d'un touchpad</li>
+								<li>Communication avec passerelle LoRa</li>
+							</ul>
+							<p>Pour conclure, l'expérience a permis de prendre conscience des critères qui influencent la sensibilité d'un capteur. L'évolution de la résistivité permet au capteur de lire une donnée. Il est possible alors de caractériser différents gaz détectés.</p> 
+							<p>Même si j'avais déjà quelques connaissances sur Arduino, je comprends mieux le fonctionnement générale d'un microcontrôleur. Arduino est un microcontrôleur simple d'utilisation souvent utilisé dans l'éducation. Chaque microcontrôleur possède ses spécificités mais le principe reste le même.</p>
+							<ul class="actions">
+								<li><a href="rapports/Gas_Sensor_Datasheet.pdf" download="Gas_Sensor_Datasheet.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/smartdevices_skills.pdf" download="smartdevices_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/innov.JPG" alt="test" /></div>-->
+						<div class="content">
+							<h3>Innovation et humanité</h3>
+							<p>L’innovation est au cœur des produits développés dans le domaine de l’IOT. Il existe différents types d'innovations qu'on peut retrouver sur le cycle de vie d'un produit. Mais quelles sont les méthodes utilisées pour innover? La <b>méthode TRIZ</b> est utilisée dans le milieu industriel pour trouver des innovations. Plusieurs lois d'évolution établies permettent de construire une stratégie pour innover. En binôme, nous avons appliqué ces connaissances à un cas pratique : la chaussure. Cet exercice a permis de trouver des innovations possibles dans des directions non explorées à ce jour. La matrice TRIZ accessible en ligne est d'une grande aide pour faire des propositions.</p>
+							<p>Afin de mieux appréhender les questions sociétales autour des nouvelles technologies, nous avons débattu et partager nos opinions et argumentaires en groupe. Ainsi, chacun s'est intérrogé sur le caractère éthique de son projet long. Cet enseignement nous a apporté une certaine ouverture d'esprit. Un des enjeux principaux qui touche à cette formation est le passage à la 5G. Peu importe les arguments en faveur ou en défaveur de la 5G, ce sont mes valeurs morales qui devront guider mes choix.</p>
+							<p>Pour garantir une meilleure insertion dans le milieu professionnel, des cours ont été dispensés pour nous expliquer la structure d'une entreprise mais aussi comment devenir un bon manager. Mon expérience professionnelle m'a bien sûr apporté toutes ces connaissances.</p> 
+							<ul class="actions">
+								<li><a href="rapports/Méthode de créativité-Groupe A2-MKA-LAG-ZHE.pdf" download="Méthode de créativité-Groupe A2-MKA-LAG-ZHE.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/humanity.pdf" download="humanity.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/data.JPG" alt="test" /></div>-->
+						<div class="content">
+							<h3>Traitement et analyse de données</h3>
+							<p>Le Web actuel atteint ces limites. La hiérarchisation des données est la problématique. Le consortium W3C inclura bientôt le Web sémantique dans ces standards.  Cette technologie est perçue comme le futur du Web. Celle-ci donnera une meilleure expérience utilisateur qui pourra rechercher des informations plus facilement que c’est le cas aujourd’hui.</p>
+							<p><b>Protégé</b> est un logiciel qui permet de créer des ontologies permettant de décrire des données. Grâce à cette structure de données, une « intelligence » peut faire des déductions automatiquement et ainsi gérer des évènements complexes. L’un des objectifs visés est de se passer de l’intervention humaine, pouvoir concevoir des systèmes interopérables, avoir des réseaux qui s’autoconfigurent. J’ai créé plusieurs propriétés sur Protégé dans le but de lui permettre de faire des déductions logiques sur la définition de certaines villes telles que Paris et Toulouse. La création de ces différentes propriétés est possible à partir d’une application créée en Java. Néanmoins, par soucis d’installation de logiciel, je n’ai pas pu parcourir cette section bien que j’en ai compris le principe général.</p>
+							<p>Le <b>langage R</b> permet de traiter des données importantes et de générer des graphiques. En effet, la remontée de multiples données provenant de capteurs à réseaux sans fil nécessite de pouvoir les traiter et les analyser grâce à des outils adéquats.  J’ai choisi d’utiliser cet outil puissant pour étudier le nombre de tués aux Etats-Unis par ethnie raciale. Les conclusions sont assez surprenantes…</p>
+							<ul class="actions">
+								<li><a href="rapports/TP_WebSem_Rapport.pdf" download="TP_WebSem_Rapport.pdf" class="button big">Rapport Protégé</a></li>
+								<li><a href="rapports/Traitement&AnalyseDeDonnes_Rapport.pdf" download="Traitement&AnalyseDeDonnes_Rapport.pdf" class="button big">Rapport RStudio</a></li>
+								<li><a href="skills/data_skills.pdf" download="data_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Protocoles de communication et gestion de l'énergie</h3>
+							<p>Face aux problématiques propres aux objets connectés, plusieurs procoles MAC ont vu le jour. Pour augmenter la durée de vie des équippements, une bonne synchronisation est nécessaire. Les différents protoles MAC utilisent différentes stratégies d'écoute pour limiter la consommation des noeuds. Mes recherches donnent un petit échantillon des différents protocoles existants.</p>
+							<p>La question de l'énergie dans les systèmes embarqués est cruciale. Le stockage de l’énergie n’a pas connu de grandes avancées technologiques au cours du temps contrairement à d’autres domaines. L'énergie dans les systèmes embarqués peut être d'origine renouvelable ou pas. Chaque type d'énergie possède ses avantages et inconvénients. Pour ce qui est des énergies non renouvelables, il existe différents types de batterie qui répondent à certains usages plus qu'à d'autres : batterie lithium, nickel-métal, nickel-cadmium... L'intégration d'une batterie dans un système devra prendre en compte les capacités de charge et de décharge. Pour déterminer la batterie à choisir, il faut passer par des calculs mathématiques pour connaitre la puissance nécessaire et consommée par le système. Mais aussi, savoir lire et interpréter les données fournisseurs des batteries est importante. </p>
+							<ul class="actions">
+								<li><a href="rapports/MAC Protocols.pdf" download="MAC Protocols.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/protocom_skills.pdf" download="protocom_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/reseau.JPG" alt="" /></div>-->
+						<div class="content">
+							<h3>Réseaux émergents</h3>
+							<p>La révolution des objets connectés nécessite de faire évoluer Internet afin de garantir une mobilité des nœuds et une plus grande flexibilité des réseaux. De nouvelles technologies sont apparues pour répondre à ces contraintes : SDN pour une meilleure gestion des réseaux et LISP pour un meilleur support à la mobilité des nœuds.</p>
+							<p>La technologie SDN (<b>Software Defined Network</b>) offre l’opportunité d’établir des règles de routage facilement configurables. J’ai mis en place un réseau d'ordinateurs utilisant les protocoles COAP et SSH pour communiquer. J’ai réalisé la connectique entre les ordinateurs, le routeur et la console. Enfin, j’ai créé différentes règles de routage depuis l’application Openflow (langage Python) et depuis le contrôleur (en commande bash).</p>
+							<p>Après expérimentation, l’application de cette technologie dans un réseau sans fil est questionnable. Au cours de cette expérience, j'ai utilisé des "brigdes" pour établir un réseau. Un microcontrôleur peut embarquer un nombre de briques important, équivalent aux "bridges", permettant le passage à l'échelle. Ainsi, on comprend pourquoi la technologie SDN s'avère intéressante face aux nombre grandissant d'objets connectés. </p>
+							<p>(Voir tableau de compétences 'Protocoles de communication et gestion de l'énergie')</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Réseau 5G</h3>
+							<p>A l'ère de 5G, j'ai acquis de la culture générale me permettant de mieux apréhender les questions techniques, économiques et sociétales liées à cette tehnologie. Les enjeux sont importants autour de la 5G. Venant d'Afrique, j'ai voulu m'intéresser aux avancées réalisées dans ce domaine sur le continent africain. Cette recherche m'a permis de comprendre les problématiques du continent principalement liées aux coûts des téléphones acceptant la 5G mais aussi à l'absence d'un tissu industriel fort. En effet, les industriels sont les premiers clients de cette technologie. Malgré que l'Afrique propose une des plus belles marge de progression en matière de téléphonie mobile, les investissements réalisés dans la 3G et 4G ne sont pas pour l'instant rentabilisés. Cela représente un frein important au déploiement de la 5G.</p>
+							<p>(Voir tableau de compétences 'Protocoles de communication et gestion de l'énergie')</p>
+							<ul class="actions">
+								<li><a href="rapports/5G AFRICA.pptx" download="5G AFRICA.pptx" class="button big">Présentation</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/uspr.jpg" alt="" /></div>-->
+						<div class="content">
+							<h3>Radio logicielle SDR</h3>
+							<p>Le <b>Software Design Radio (SDR)</b> est un type d’émetteur-récepteur où la modulation et la démodulation est faite de manière numérique. Un système peut embarquer plusieurs applications différentes en termes de technologies, de fréquence de modulation ou d’encodage. L’utilisation de SDR permet d’utiliser ces applications de manière simultanée et de les faire évoluer facilement. La recherche se penche sur la modulation et la démodulation de signaux dans les réseaux sans fil, en utilsant la radio logicielle. L'enjeu est de transporter le signal sur de longues distances.</p>
+							<p>L'expérience a consisté à démoduler un signal par la modulation d'amplitude et de fréquence et à appliquer des filtres pour récupérer le signal propre de tel sorte qu'on puisse l'écouter. Avant d'utiliser le logiciel <b>GNU Radio</b>, j'ai acquis des notions essentielles au traitement de signal.</p>
+							<p>(Voir tableau de compétences 'Protocoles de communication et gestion de l'énergie')</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Réseaux sans fil critiques</h3>
+							<p>En fonction des applications, les contraintes dans les réseaux sans fil changent. Dans les réseaux critiques, une notion de détermine intervient. Un message de données doit arriver dans un laps de temps bien précis. Tout débordement pourrait entraîner un risque pour l’utilisateur.</p>
+							<p>La synchronisation des réseaux est primordiale et est obtenue par différentes méthodes. Le beacon est aussi un élément dont la fonction est de coordonner les nœuds dans les réseaux en mesh ou étoile. Différents modes utilisant des beacons existent et peuvent être classés par leur niveau de déterminisme : GTS et TSCH. Ces modes sont appliqués pour des réseaux locaux. Pour les réseaux connectés à Internet, un autre mode permet de rendre des adresses routables : 6Tisch.</p>
+							<p>En pratique, j’ai pu synchroniser un émetteur et un récepteur en introduisant le temps dans chacune des trames transmises par l’émetteur et en adaptant l’horloge du récepteur à partir du décodage de la trame reçue. J’ai expérimenté le mode RPL avec le protocole Contiki grâce auquel j’ai mis en place un réseau mesh. Je me suis familiarisé également avec l’analyse de trames.</p>
+							<p>(Voir tableau de compétences 'Protocoles de communication et gestion de l'énergie')</p>
+							<ul class="actions">
+								<li><a href="rapports/TP Synchronisation-Marc Kasse.pdf" download="TP Synchronisation-Marc Kasse.pdf" class="button big">Rapport</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<!--<div class="image"><img src="img/business.JPG" alt="test" /></div>-->
+						<div class="content">
+							<h3>Strategy & Marketting</h3>
+							<p>L’innovation étant au cœur de cette formation, la connaissance du processus menant à la création d’une start-up peut s’avérer très utile. Le <b>business model et le business plan</b> sont les éléments qui vont convaincre les futures investisseurs.</p>
+							<p>Les sujets abordés en cours ont été l'établissement du business model, du plan financier et la recherche de financement. Sur un cas pratique, j'ai appliqué l'ensemble des outils et méthodes pour établir un business model et construire un discours de 5 min pour convaincre des investisseurs. Mon idée a été de créer une poubelle connectée faisant le tri automatique des déchets des ménages mais aussi des entreprises et des établissements privés. Cette expérience a permis de savoir comment construire un power point efficace et sur quelles informations mettre l'accent pour convaincre.</p>
+							<p>L’intervention d’un entrepreneur aguerri a permis de mieux appréhender la question financière liée au lancement d’une start-up. En effet, cela m’a ouvert les yeux sur le fait que de nombreuses solutions de financement existent. D'autres aspects liés à la <b>propriété intellectuelle</b> sont importants à la création d'une start-up. Nous avons mis l'accent principalement sur les brevets et le droit d'auteur.</p>
+							<ul class="actions">
+								<li><a href="rapports/Ecobell.pptx" download="rapports/Ecobell.pptx" class="button big">Présentation</a></li>
+								<li><a href="skills/business_skills.pdf" download="business_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="content">
+							<h3>Sécurité IOT</h3>
+							<p>L’IOT est aussi sujet aux problèmes de sécurité que connais l’internet en général. Néanmoins, les attaquants peuvent accéder directement aux objets connectés. Cela nécessite donc de mettre en place d’autres mécanismes de sécurité. Mais la sécurité implique des coûts supplémentaires. Malheureusement, on y pense qu’après le déploiement du produit et voire quand une première attaque a eu lieu. Une prise de conscience doit être faite pour penser sécurité en amont dès le développement du produit.</p>
+							
+							<cite>Expérience 1</cite>
+							
+							<p>J’ai testé une attaque sur buffer d’un ordinateur. Remis dans le contexte de l’IOT, cela peut se réaliser sur un microcontrôleur. Les personnes malveillantes surveillent toute variation de la consommation énergétique des objets connectés et profitent de chaque changement d’état pour réaliser des <b>injections</b>. L’attaque a consisté à modifier l’ordre d’exécution d’un programme en C en modifiant les adresses de retour dans le buffer. A la suite de cette mise en pratique, je me questionne sur les mécanismes à mettre en place pour limiter ces fuites.</p>
+							
+							<cite>Expérience 2</cite>
+							
+							<p>Je suis désormais beaucoup plus conscient des failles de sécurité dans le Web. J’ai réalisé comment il peut être facile d’exploiter les failles de sécurité, notamment pour se connecter sans login ni mot de passe ou encore pour récupérer un cookie tiers afin de se connecter sur une autre machine avec une autre identité. La plupart de ces manipulations a été faite en exploitant le langage SQL.</p>
+							
+							<cite>Expérience 3</cite>
+							
+							<p>La <b>cryptographie</b> est un mécanisme de sécurité qui consiste à écrire et partager un secret entre deux destinataires. Dans un système IOT, le cryptage d’une communication entre deux nœuds passe par une signature, un chiffrement asymétrique et un chiffrement symétrique. Chaque message échangé reçoit une signature. Un chiffrement asymétrique permet l’échange rapide de la clé pour décoder les messages. Enfin, le chiffrement symétrique permet aux nœuds de communiquer en toute sécurité. J’ai compris en quoi l’<b>algorithme AES</b> assurait une sécurité importante, notamment par rapport à l’<b>algorithme RSA</b>.
+							Néanmoins le chiffrement peut faire l’objet d’attaques physiques par la fuite au niveau des registres des microcontrôleurs, appelées aussi <b>« side-channel attack » (SCA)</b>. La recherche traite sérieusement ce sujet et nous verrons certainement dans quelques années des compilateurs prenant en compte les micro-architecture des microcontrôleurs. Cependant, il est intéressant d’en être conscient car il est possible de mettre en place des actions simples qui peuvent empêcher ces fuites. A partir de l’analyse des registres lors de l’exécution d’un code, j’ai remarqué avec quelle facilité les registres pouvaient faire fuir des informations importantes comme par exemple la clé de sécurité. 
+							Dans une deuxième partie, j’ai mis en place une communication sécurisée par le <b>protocole TLS</b> en utilisant RSA comme algorithme de chiffrement symétrique. J’ai appris qu’il était possible de créer, simplement et rapidement sa propre autorité de certification sans avoir à passer par une compagnie tierce. Concrètement, on génère un certificat auto-signé qui délivre une clé sécurisée par RSA et une clé de vérification. Ce certificat est ensuite utilisé pour « signer » les communications entre nœuds communicants.
+							</p>
+							
+							<cite>Expérience 4</cite>
+							
+							<p>La sensibilisation autour des attaques physiques dans le milieu de l’IOT est importante. Pour cela, j’ai vécu différentes expérimentations en séances de travaux pratiques.</p>
+							<p>Voici les cas que j’ai observés :</p>
+							<ul>
+							  <li>Un premier cas à consister à récupérer le code composé par une personne accédant au site de sa banque en ligne.</li>
+							  <li>Un deuxième cas a consisté à prendre le contrôle d’un objet connecté à partir de l’écoute, de l’enregistrement et de la retransmission du signal transmis par une télécommande à l’objet. Ce cas a permis de montrer l’utilité de mettre en place un comptage des séquences ou un chiffrement. </li>
+							  <li>Un troisième cas a consisté à observer un cas de brouillage réactif par l’envoi d’un signal parasite pour empêcher tout appairage avec un appareil Bluetooth.</li>
+								<li>Un quatrième cas a consisté à observer une attaque par un <b>man-in-the-middle</b> dans le cas d’un réseau mesh. La connaissance des méthodes utilisées par les hackers permet d’avoir une réflexion constructive autour des solutions qui peuvent être envisagées.</li>
+							</ul>
+							<ul class="actions">
+								<li><a href="rapports/Rapport ISS Security.pdf" download="Rapport ISS Security.pdf" class="button big">Rapport</a></li>
+								<li><a href="skills/securityIOT_skills.pdf" download="securityIOT_skills.pdf" class="button big">Tableau de compétences</a></li>
+							</ul>
+						</div>
+					</section>
+					<!--<section class="spotlight">
+						<div class="content">
+							<h3>Energie pour les systèmes  embarqués</h3>
+							<p>L’objectif de cet enseignement est de nous sensibiliser aux problèmes d’énergie rencontrés dans les systèmes embarqués. Le stockage de l’énergie n’a pas connu de grandes avancées technologiques au cours du temps contrairement à d’autres domaines. L’énergie a bord d’un système embarqué est un point crucial à ne pas délaisser.</p>
+							<p>L'énergie dans les systèmes embarqués peut être d'origine renouvelable ou pas. Chaque type d'énergie possède ses avantages et inconvénients. Pour ce qui est des énergies non renouvelables, il existe différents types de batterie qui répondent à certains usages plus qu'à d'autres : batterie lithium, nickel-métal, nickel-cadmium... L'intégration d'une batterie dans un système devra prendre en compte les capacités de charge et de décharge. Pour déterminer la batterie à choisir, il faut passer par des calculs mathématiques pour connaitre la puissance nécessaire et consommée par le système. Mais aussi, savoir lire et interpréter les données fournisseurs des batteries est importante. </p>
+						</div>
+					</section>-->												  
+				</div>
+			</section>
+		
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
